@@ -1,0 +1,3556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://mirlmes.itri.org.tw/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://mirlmes.itri.org.tw/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://mirlmes.itri.org.tw/">
+      <s:element name="LoadMaterialType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMaterialTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddMaterialTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMaterialType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMaterialTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditMaterialTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelMaterialTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveMaterialType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveMaterialTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApproveMaterialTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialProperty">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialPropertyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMaterialPropertyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialProperty">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialPropertyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddMaterialPropertyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMaterialProperty">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMaterialPropertyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditMaterialPropertyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialProperty">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialPropertyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelMaterialPropertyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveMaterialProperty">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveMaterialPropertyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApproveMaterialPropertyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialPropertyDefine">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialPropertyDefineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMaterialPropertyDefineResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMTLBasisMinusProperty">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMTLBasisMinusPropertyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMTLBasisMinusPropertyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialVendor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialVendorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMaterialVendorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialVendor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialVendorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddMaterialVendorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMaterialVendor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMaterialVendorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditMaterialVendorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialVendor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialVendorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelMaterialVendorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveMaterialVendor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveMaterialVendorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApproveMaterialVendorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialVendorContactor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialVendorContactorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMaterialVendorContactorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialVendorContactor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialVendorContactorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddMaterialVendorContactorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMaterialVendorContactor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMaterialVendorContactorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditMaterialVendorContactorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialVendorContactor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialVendorContactorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelMaterialVendorContactorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMaterialBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddMaterialBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMaterialBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMaterialBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditMaterialBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelMaterialBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveMaterialBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveMaterialBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApproveMaterialBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialBasisDefine">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialBasisDefineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMaterialBasisDefineResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialGroupBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialGroupBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMaterialGroupBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialGroupBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialGroupBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddMaterialGroupBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMaterialGroupBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMaterialGroupBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditMaterialGroupBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialGroupBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialGroupBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelMaterialGroupBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialGroupDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialGroupDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMaterialGroupDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialGroupDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialGroupDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddMaterialGroupDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdMaterialGroupDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdMaterialGroupDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdMaterialGroupDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialGroupDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialGroupDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelMaterialGroupDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialSubstitute">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialSubstituteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMaterialSubstituteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialVendorMap">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialVendorMapResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMaterialVendorMapResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadDistMaterialVendorMap">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadDistMaterialVendorMapResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadDistMaterialVendorMapResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialVendorMap">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialVendorMapResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddMaterialVendorMapResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMaterialVendorMap">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMaterialVendorMapResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditMaterialVendorMapResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialVendorMap">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialVendorMapResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelMaterialVendorMapResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CopyMaterial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CopyMaterialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CopyMaterialResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMTLQCItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMTLQCItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMTLQCItemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMTLQCItem_MTLOnly">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMTLQCItem_MTLOnlyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMTLQCItem_MTLOnlyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdMTLQCItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdMTLQCItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdMTLQCItemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialPLMDoc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialPLMDocResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMaterialPLMDocResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialDefrost">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialDefrostResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMaterialDefrostResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialDefrost">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialDefrostResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddMaterialDefrostResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMaterialDefrost">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMaterialDefrostResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditMaterialDefrostResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialDefrost">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialDefrostResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelMaterialDefrostResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialDefrostByNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialDefrostByNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMaterialDefrostByNoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadECNLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadECNLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadECNLogResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddECNLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddECNLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddECNLogResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdECNLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdECNLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdECNLogResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelECNLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelECNLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelECNLogResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdMaterialVendorMapFlag">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdMaterialVendorMapFlagResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdMaterialVendorMapFlagResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRiskValue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRiskValueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRiskValueResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadQualityLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadQualityLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadQualityLogResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddQualityLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddQualityLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddQualityLogResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditorAddQualityLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditorAddQualityLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditorAddQualityLogResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteQualityLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteQualityLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteQualityLogResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ShowMaterialBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OutXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ShowMaterialBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ShowMaterialBasisResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="OutXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialBasisByOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialBasisByOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMaterialBasisByOrderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMTLBarCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMTLBarCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMTLBarCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMTLBarCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMTLBarCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddMTLBarCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMTLBarCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMTLBarCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditMTLBarCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMTLBarCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMTLBarCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelMTLBarCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMTLMadeCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMTLMadeCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMTLMadeCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMTLBarCodePartial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMTLBarCodePartialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMTLBarCodePartialResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialNoBakeInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialNoBakeInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMaterialNoBakeInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMoNoMaterialRack_Combine">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMoNoMaterialRack_CombineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddMoNoMaterialRack_CombineResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMoNoMaterialRack_CheckOut">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMoNoMaterialRack_CheckOutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddMoNoMaterialRack_CheckOutResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ShowMaterialBake">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OutXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ShowMaterialBakeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ShowMaterialBakeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="OutXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialBake">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMaterialBakeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddMaterialBakeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMaterialBake">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditMaterialBakeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditMaterialBakeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialBake">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMaterialBakeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelMaterialBakeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveMaterialBake">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveMaterialBakeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApproveMaterialBakeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialRack_Combine">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadMaterialRack_CombineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadMaterialRack_CombineResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadPreprocessMaterialNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadPreprocessMaterialNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadPreprocessMaterialNoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadCUS_SMTMaterialConfig">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ComputerNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YEAR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Week" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PDLineNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadCUS_SMTMaterialConfigResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadCUS_SMTMaterialConfigResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="ErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExeCUS_SMTMaterialConfig_Merge">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ComputerNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="ContentDel">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="ErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExeCUS_SMTMaterialConfig_MergeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExeCUS_SMTMaterialConfig_MergeResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoadMaterialTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMaterialType" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMaterialTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:AddMaterialType" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:AddMaterialTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditMaterialTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:EditMaterialType" />
+  </wsdl:message>
+  <wsdl:message name="EditMaterialTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:EditMaterialTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:DelMaterialType" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:DelMaterialTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ApproveMaterialTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:ApproveMaterialType" />
+  </wsdl:message>
+  <wsdl:message name="ApproveMaterialTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:ApproveMaterialTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialPropertySoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMaterialProperty" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialPropertySoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMaterialPropertyResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialPropertySoapIn">
+    <wsdl:part name="parameters" element="tns:AddMaterialProperty" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialPropertySoapOut">
+    <wsdl:part name="parameters" element="tns:AddMaterialPropertyResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditMaterialPropertySoapIn">
+    <wsdl:part name="parameters" element="tns:EditMaterialProperty" />
+  </wsdl:message>
+  <wsdl:message name="EditMaterialPropertySoapOut">
+    <wsdl:part name="parameters" element="tns:EditMaterialPropertyResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialPropertySoapIn">
+    <wsdl:part name="parameters" element="tns:DelMaterialProperty" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialPropertySoapOut">
+    <wsdl:part name="parameters" element="tns:DelMaterialPropertyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ApproveMaterialPropertySoapIn">
+    <wsdl:part name="parameters" element="tns:ApproveMaterialProperty" />
+  </wsdl:message>
+  <wsdl:message name="ApproveMaterialPropertySoapOut">
+    <wsdl:part name="parameters" element="tns:ApproveMaterialPropertyResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialPropertyDefineSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMaterialPropertyDefine" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialPropertyDefineSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMaterialPropertyDefineResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMTLBasisMinusPropertySoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMTLBasisMinusProperty" />
+  </wsdl:message>
+  <wsdl:message name="LoadMTLBasisMinusPropertySoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMTLBasisMinusPropertyResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialVendorSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMaterialVendor" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialVendorSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMaterialVendorResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialVendorSoapIn">
+    <wsdl:part name="parameters" element="tns:AddMaterialVendor" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialVendorSoapOut">
+    <wsdl:part name="parameters" element="tns:AddMaterialVendorResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditMaterialVendorSoapIn">
+    <wsdl:part name="parameters" element="tns:EditMaterialVendor" />
+  </wsdl:message>
+  <wsdl:message name="EditMaterialVendorSoapOut">
+    <wsdl:part name="parameters" element="tns:EditMaterialVendorResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialVendorSoapIn">
+    <wsdl:part name="parameters" element="tns:DelMaterialVendor" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialVendorSoapOut">
+    <wsdl:part name="parameters" element="tns:DelMaterialVendorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ApproveMaterialVendorSoapIn">
+    <wsdl:part name="parameters" element="tns:ApproveMaterialVendor" />
+  </wsdl:message>
+  <wsdl:message name="ApproveMaterialVendorSoapOut">
+    <wsdl:part name="parameters" element="tns:ApproveMaterialVendorResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialVendorContactorSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMaterialVendorContactor" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialVendorContactorSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMaterialVendorContactorResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialVendorContactorSoapIn">
+    <wsdl:part name="parameters" element="tns:AddMaterialVendorContactor" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialVendorContactorSoapOut">
+    <wsdl:part name="parameters" element="tns:AddMaterialVendorContactorResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditMaterialVendorContactorSoapIn">
+    <wsdl:part name="parameters" element="tns:EditMaterialVendorContactor" />
+  </wsdl:message>
+  <wsdl:message name="EditMaterialVendorContactorSoapOut">
+    <wsdl:part name="parameters" element="tns:EditMaterialVendorContactorResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialVendorContactorSoapIn">
+    <wsdl:part name="parameters" element="tns:DelMaterialVendorContactor" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialVendorContactorSoapOut">
+    <wsdl:part name="parameters" element="tns:DelMaterialVendorContactorResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMaterialBasis" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMaterialBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:AddMaterialBasis" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:AddMaterialBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditMaterialBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:EditMaterialBasis" />
+  </wsdl:message>
+  <wsdl:message name="EditMaterialBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:EditMaterialBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:DelMaterialBasis" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:DelMaterialBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="ApproveMaterialBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:ApproveMaterialBasis" />
+  </wsdl:message>
+  <wsdl:message name="ApproveMaterialBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:ApproveMaterialBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialBasisDefineSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMaterialBasisDefine" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialBasisDefineSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMaterialBasisDefineResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialGroupBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMaterialGroupBasis" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialGroupBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMaterialGroupBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialGroupBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:AddMaterialGroupBasis" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialGroupBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:AddMaterialGroupBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditMaterialGroupBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:EditMaterialGroupBasis" />
+  </wsdl:message>
+  <wsdl:message name="EditMaterialGroupBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:EditMaterialGroupBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialGroupBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:DelMaterialGroupBasis" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialGroupBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:DelMaterialGroupBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialGroupDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMaterialGroupDetail" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialGroupDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMaterialGroupDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialGroupDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:AddMaterialGroupDetail" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialGroupDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:AddMaterialGroupDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdMaterialGroupDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdMaterialGroupDetail" />
+  </wsdl:message>
+  <wsdl:message name="UpdMaterialGroupDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdMaterialGroupDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialGroupDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:DelMaterialGroupDetail" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialGroupDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:DelMaterialGroupDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialSubstituteSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMaterialSubstitute" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialSubstituteSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMaterialSubstituteResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialVendorMapSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMaterialVendorMap" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialVendorMapSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMaterialVendorMapResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadDistMaterialVendorMapSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadDistMaterialVendorMap" />
+  </wsdl:message>
+  <wsdl:message name="LoadDistMaterialVendorMapSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadDistMaterialVendorMapResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialVendorMapSoapIn">
+    <wsdl:part name="parameters" element="tns:AddMaterialVendorMap" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialVendorMapSoapOut">
+    <wsdl:part name="parameters" element="tns:AddMaterialVendorMapResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditMaterialVendorMapSoapIn">
+    <wsdl:part name="parameters" element="tns:EditMaterialVendorMap" />
+  </wsdl:message>
+  <wsdl:message name="EditMaterialVendorMapSoapOut">
+    <wsdl:part name="parameters" element="tns:EditMaterialVendorMapResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialVendorMapSoapIn">
+    <wsdl:part name="parameters" element="tns:DelMaterialVendorMap" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialVendorMapSoapOut">
+    <wsdl:part name="parameters" element="tns:DelMaterialVendorMapResponse" />
+  </wsdl:message>
+  <wsdl:message name="CopyMaterialSoapIn">
+    <wsdl:part name="parameters" element="tns:CopyMaterial" />
+  </wsdl:message>
+  <wsdl:message name="CopyMaterialSoapOut">
+    <wsdl:part name="parameters" element="tns:CopyMaterialResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMTLQCItemSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMTLQCItem" />
+  </wsdl:message>
+  <wsdl:message name="LoadMTLQCItemSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMTLQCItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMTLQCItem_MTLOnlySoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMTLQCItem_MTLOnly" />
+  </wsdl:message>
+  <wsdl:message name="LoadMTLQCItem_MTLOnlySoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMTLQCItem_MTLOnlyResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdMTLQCItemSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdMTLQCItem" />
+  </wsdl:message>
+  <wsdl:message name="UpdMTLQCItemSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdMTLQCItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialPLMDocSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMaterialPLMDoc" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialPLMDocSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMaterialPLMDocResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialDefrostSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMaterialDefrost" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialDefrostSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMaterialDefrostResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialDefrostSoapIn">
+    <wsdl:part name="parameters" element="tns:AddMaterialDefrost" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialDefrostSoapOut">
+    <wsdl:part name="parameters" element="tns:AddMaterialDefrostResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditMaterialDefrostSoapIn">
+    <wsdl:part name="parameters" element="tns:EditMaterialDefrost" />
+  </wsdl:message>
+  <wsdl:message name="EditMaterialDefrostSoapOut">
+    <wsdl:part name="parameters" element="tns:EditMaterialDefrostResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialDefrostSoapIn">
+    <wsdl:part name="parameters" element="tns:DelMaterialDefrost" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialDefrostSoapOut">
+    <wsdl:part name="parameters" element="tns:DelMaterialDefrostResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialDefrostByNoSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMaterialDefrostByNo" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialDefrostByNoSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMaterialDefrostByNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadECNLogSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadECNLog" />
+  </wsdl:message>
+  <wsdl:message name="LoadECNLogSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadECNLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddECNLogSoapIn">
+    <wsdl:part name="parameters" element="tns:AddECNLog" />
+  </wsdl:message>
+  <wsdl:message name="AddECNLogSoapOut">
+    <wsdl:part name="parameters" element="tns:AddECNLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdECNLogSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdECNLog" />
+  </wsdl:message>
+  <wsdl:message name="UpdECNLogSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdECNLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelECNLogSoapIn">
+    <wsdl:part name="parameters" element="tns:DelECNLog" />
+  </wsdl:message>
+  <wsdl:message name="DelECNLogSoapOut">
+    <wsdl:part name="parameters" element="tns:DelECNLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdMaterialVendorMapFlagSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdMaterialVendorMapFlag" />
+  </wsdl:message>
+  <wsdl:message name="UpdMaterialVendorMapFlagSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdMaterialVendorMapFlagResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRiskValueSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRiskValue" />
+  </wsdl:message>
+  <wsdl:message name="GetRiskValueSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRiskValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadQualityLogSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadQualityLog" />
+  </wsdl:message>
+  <wsdl:message name="LoadQualityLogSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadQualityLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddQualityLogSoapIn">
+    <wsdl:part name="parameters" element="tns:AddQualityLog" />
+  </wsdl:message>
+  <wsdl:message name="AddQualityLogSoapOut">
+    <wsdl:part name="parameters" element="tns:AddQualityLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditorAddQualityLogSoapIn">
+    <wsdl:part name="parameters" element="tns:EditorAddQualityLog" />
+  </wsdl:message>
+  <wsdl:message name="EditorAddQualityLogSoapOut">
+    <wsdl:part name="parameters" element="tns:EditorAddQualityLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteQualityLogSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteQualityLog" />
+  </wsdl:message>
+  <wsdl:message name="DeleteQualityLogSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteQualityLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="ShowMaterialBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:ShowMaterialBasis" />
+  </wsdl:message>
+  <wsdl:message name="ShowMaterialBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:ShowMaterialBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialBasisByOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMaterialBasisByOrder" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialBasisByOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMaterialBasisByOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMTLBarCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMTLBarCode" />
+  </wsdl:message>
+  <wsdl:message name="LoadMTLBarCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMTLBarCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddMTLBarCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:AddMTLBarCode" />
+  </wsdl:message>
+  <wsdl:message name="AddMTLBarCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:AddMTLBarCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditMTLBarCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:EditMTLBarCode" />
+  </wsdl:message>
+  <wsdl:message name="EditMTLBarCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:EditMTLBarCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelMTLBarCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:DelMTLBarCode" />
+  </wsdl:message>
+  <wsdl:message name="DelMTLBarCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:DelMTLBarCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMTLMadeCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMTLMadeCode" />
+  </wsdl:message>
+  <wsdl:message name="LoadMTLMadeCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMTLMadeCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMTLBarCodePartialSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMTLBarCodePartial" />
+  </wsdl:message>
+  <wsdl:message name="LoadMTLBarCodePartialSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMTLBarCodePartialResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialNoBakeInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMaterialNoBakeInfo" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialNoBakeInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMaterialNoBakeInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddMoNoMaterialRack_CombineSoapIn">
+    <wsdl:part name="parameters" element="tns:AddMoNoMaterialRack_Combine" />
+  </wsdl:message>
+  <wsdl:message name="AddMoNoMaterialRack_CombineSoapOut">
+    <wsdl:part name="parameters" element="tns:AddMoNoMaterialRack_CombineResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddMoNoMaterialRack_CheckOutSoapIn">
+    <wsdl:part name="parameters" element="tns:AddMoNoMaterialRack_CheckOut" />
+  </wsdl:message>
+  <wsdl:message name="AddMoNoMaterialRack_CheckOutSoapOut">
+    <wsdl:part name="parameters" element="tns:AddMoNoMaterialRack_CheckOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="ShowMaterialBakeSoapIn">
+    <wsdl:part name="parameters" element="tns:ShowMaterialBake" />
+  </wsdl:message>
+  <wsdl:message name="ShowMaterialBakeSoapOut">
+    <wsdl:part name="parameters" element="tns:ShowMaterialBakeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialBakeSoapIn">
+    <wsdl:part name="parameters" element="tns:AddMaterialBake" />
+  </wsdl:message>
+  <wsdl:message name="AddMaterialBakeSoapOut">
+    <wsdl:part name="parameters" element="tns:AddMaterialBakeResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditMaterialBakeSoapIn">
+    <wsdl:part name="parameters" element="tns:EditMaterialBake" />
+  </wsdl:message>
+  <wsdl:message name="EditMaterialBakeSoapOut">
+    <wsdl:part name="parameters" element="tns:EditMaterialBakeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialBakeSoapIn">
+    <wsdl:part name="parameters" element="tns:DelMaterialBake" />
+  </wsdl:message>
+  <wsdl:message name="DelMaterialBakeSoapOut">
+    <wsdl:part name="parameters" element="tns:DelMaterialBakeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ApproveMaterialBakeSoapIn">
+    <wsdl:part name="parameters" element="tns:ApproveMaterialBake" />
+  </wsdl:message>
+  <wsdl:message name="ApproveMaterialBakeSoapOut">
+    <wsdl:part name="parameters" element="tns:ApproveMaterialBakeResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialRack_CombineSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadMaterialRack_Combine" />
+  </wsdl:message>
+  <wsdl:message name="LoadMaterialRack_CombineSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadMaterialRack_CombineResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadPreprocessMaterialNoSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadPreprocessMaterialNo" />
+  </wsdl:message>
+  <wsdl:message name="LoadPreprocessMaterialNoSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadPreprocessMaterialNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadCUS_SMTMaterialConfigSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadCUS_SMTMaterialConfig" />
+  </wsdl:message>
+  <wsdl:message name="LoadCUS_SMTMaterialConfigSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadCUS_SMTMaterialConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExeCUS_SMTMaterialConfig_MergeSoapIn">
+    <wsdl:part name="parameters" element="tns:ExeCUS_SMTMaterialConfig_Merge" />
+  </wsdl:message>
+  <wsdl:message name="ExeCUS_SMTMaterialConfig_MergeSoapOut">
+    <wsdl:part name="parameters" element="tns:ExeCUS_SMTMaterialConfig_MergeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsMTLSoap">
+    <wsdl:operation name="LoadMaterialType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load MaterialType Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadMaterialTypeSoapIn" />
+      <wsdl:output message="tns:LoadMaterialTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add MaterialType data</wsdl:documentation>
+      <wsdl:input message="tns:AddMaterialTypeSoapIn" />
+      <wsdl:output message="tns:AddMaterialTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified MaterialType Data</wsdl:documentation>
+      <wsdl:input message="tns:EditMaterialTypeSoapIn" />
+      <wsdl:output message="tns:EditMaterialTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete MaterialType By Specified MaterialType</wsdl:documentation>
+      <wsdl:input message="tns:DelMaterialTypeSoapIn" />
+      <wsdl:output message="tns:DelMaterialTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveMaterialType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Approve Specified MaterialType Data</wsdl:documentation>
+      <wsdl:input message="tns:ApproveMaterialTypeSoapIn" />
+      <wsdl:output message="tns:ApproveMaterialTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialProperty">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load MaterialProperty Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadMaterialPropertySoapIn" />
+      <wsdl:output message="tns:LoadMaterialPropertySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialProperty">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add MaterialProperty data</wsdl:documentation>
+      <wsdl:input message="tns:AddMaterialPropertySoapIn" />
+      <wsdl:output message="tns:AddMaterialPropertySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialProperty">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified MaterialProperty Data</wsdl:documentation>
+      <wsdl:input message="tns:EditMaterialPropertySoapIn" />
+      <wsdl:output message="tns:EditMaterialPropertySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialProperty">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete MaterialProperty By Specified Material and PropertyNo</wsdl:documentation>
+      <wsdl:input message="tns:DelMaterialPropertySoapIn" />
+      <wsdl:output message="tns:DelMaterialPropertySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveMaterialProperty">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Approve Specified MaterialProperty Data By Material and PropertyNo</wsdl:documentation>
+      <wsdl:input message="tns:ApproveMaterialPropertySoapIn" />
+      <wsdl:output message="tns:ApproveMaterialPropertySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialPropertyDefine">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Material Property Define Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadMaterialPropertyDefineSoapIn" />
+      <wsdl:output message="tns:LoadMaterialPropertyDefineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMTLBasisMinusProperty">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load MTL Property Revice Right Join MTL Property Basis</wsdl:documentation>
+      <wsdl:input message="tns:LoadMTLBasisMinusPropertySoapIn" />
+      <wsdl:output message="tns:LoadMTLBasisMinusPropertySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialVendor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Material Vendor Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadMaterialVendorSoapIn" />
+      <wsdl:output message="tns:LoadMaterialVendorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialVendor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Material Vendor data</wsdl:documentation>
+      <wsdl:input message="tns:AddMaterialVendorSoapIn" />
+      <wsdl:output message="tns:AddMaterialVendorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialVendor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified Material Vendor Data</wsdl:documentation>
+      <wsdl:input message="tns:EditMaterialVendorSoapIn" />
+      <wsdl:output message="tns:EditMaterialVendorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialVendor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete Material Vendor By Specified Vendor</wsdl:documentation>
+      <wsdl:input message="tns:DelMaterialVendorSoapIn" />
+      <wsdl:output message="tns:DelMaterialVendorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveMaterialVendor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Approve Specified Material Vendor Data</wsdl:documentation>
+      <wsdl:input message="tns:ApproveMaterialVendorSoapIn" />
+      <wsdl:output message="tns:ApproveMaterialVendorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialVendorContactor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Material Vendor Contactor Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadMaterialVendorContactorSoapIn" />
+      <wsdl:output message="tns:LoadMaterialVendorContactorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialVendorContactor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Material Vendor Contactor data</wsdl:documentation>
+      <wsdl:input message="tns:AddMaterialVendorContactorSoapIn" />
+      <wsdl:output message="tns:AddMaterialVendorContactorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialVendorContactor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified MaterialVendor Data</wsdl:documentation>
+      <wsdl:input message="tns:EditMaterialVendorContactorSoapIn" />
+      <wsdl:output message="tns:EditMaterialVendorContactorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialVendorContactor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete Material Vendor Contactor By Specified VendorNo and ContactorName</wsdl:documentation>
+      <wsdl:input message="tns:DelMaterialVendorContactorSoapIn" />
+      <wsdl:output message="tns:DelMaterialVendorContactorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Material Basis Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadMaterialBasisSoapIn" />
+      <wsdl:output message="tns:LoadMaterialBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Material Basis</wsdl:documentation>
+      <wsdl:input message="tns:AddMaterialBasisSoapIn" />
+      <wsdl:output message="tns:AddMaterialBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified Material Basis Data</wsdl:documentation>
+      <wsdl:input message="tns:EditMaterialBasisSoapIn" />
+      <wsdl:output message="tns:EditMaterialBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete Material Basis By Specified MaterialNo</wsdl:documentation>
+      <wsdl:input message="tns:DelMaterialBasisSoapIn" />
+      <wsdl:output message="tns:DelMaterialBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveMaterialBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Approve Specified Material Basis Data by MaterialNo</wsdl:documentation>
+      <wsdl:input message="tns:ApproveMaterialBasisSoapIn" />
+      <wsdl:output message="tns:ApproveMaterialBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialBasisDefine">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load relatived data of add or edit Material basis</wsdl:documentation>
+      <wsdl:input message="tns:LoadMaterialBasisDefineSoapIn" />
+      <wsdl:output message="tns:LoadMaterialBasisDefineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialGroupBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Material Group Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadMaterialGroupBasisSoapIn" />
+      <wsdl:output message="tns:LoadMaterialGroupBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialGroupBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add MaterialGroup Basis data</wsdl:documentation>
+      <wsdl:input message="tns:AddMaterialGroupBasisSoapIn" />
+      <wsdl:output message="tns:AddMaterialGroupBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialGroupBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified MaterialType Data</wsdl:documentation>
+      <wsdl:input message="tns:EditMaterialGroupBasisSoapIn" />
+      <wsdl:output message="tns:EditMaterialGroupBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialGroupBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete MaterialGroupBasis By Specified GroupNo</wsdl:documentation>
+      <wsdl:input message="tns:DelMaterialGroupBasisSoapIn" />
+      <wsdl:output message="tns:DelMaterialGroupBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialGroupDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load MaterialGroup Detail</wsdl:documentation>
+      <wsdl:input message="tns:LoadMaterialGroupDetailSoapIn" />
+      <wsdl:output message="tns:LoadMaterialGroupDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialGroupDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add MaterialGroup Detail data</wsdl:documentation>
+      <wsdl:input message="tns:AddMaterialGroupDetailSoapIn" />
+      <wsdl:output message="tns:AddMaterialGroupDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdMaterialGroupDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Batch Edit UserGroup data by GroupNo</wsdl:documentation>
+      <wsdl:input message="tns:UpdMaterialGroupDetailSoapIn" />
+      <wsdl:output message="tns:UpdMaterialGroupDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialGroupDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete MaterialGroupDetail By Specified GroupNo</wsdl:documentation>
+      <wsdl:input message="tns:DelMaterialGroupDetailSoapIn" />
+      <wsdl:output message="tns:DelMaterialGroupDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialSubstitute">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Material's substitute Detail</wsdl:documentation>
+      <wsdl:input message="tns:LoadMaterialSubstituteSoapIn" />
+      <wsdl:output message="tns:LoadMaterialSubstituteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialVendorMap">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load MaterialVendorMap Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadMaterialVendorMapSoapIn" />
+      <wsdl:output message="tns:LoadMaterialVendorMapSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadDistMaterialVendorMap">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Distinct MaterialVendorMap Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadDistMaterialVendorMapSoapIn" />
+      <wsdl:output message="tns:LoadDistMaterialVendorMapSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialVendorMap">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add MaterialVendorMap data</wsdl:documentation>
+      <wsdl:input message="tns:AddMaterialVendorMapSoapIn" />
+      <wsdl:output message="tns:AddMaterialVendorMapSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialVendorMap">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified MaterialVendorMap Data</wsdl:documentation>
+      <wsdl:input message="tns:EditMaterialVendorMapSoapIn" />
+      <wsdl:output message="tns:EditMaterialVendorMapSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialVendorMap">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete MaterialVendorMap By Specified MaterialNo and VendorNo</wsdl:documentation>
+      <wsdl:input message="tns:DelMaterialVendorMapSoapIn" />
+      <wsdl:output message="tns:DelMaterialVendorMapSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CopyMaterial">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Copy Material</wsdl:documentation>
+      <wsdl:input message="tns:CopyMaterialSoapIn" />
+      <wsdl:output message="tns:CopyMaterialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMTLQCItem">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load MTL QCItem, QCItem Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadMTLQCItemSoapIn" />
+      <wsdl:output message="tns:LoadMTLQCItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMTLQCItem_MTLOnly">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load MTL QCItem, QCItem Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadMTLQCItem_MTLOnlySoapIn" />
+      <wsdl:output message="tns:LoadMTLQCItem_MTLOnlySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdMTLQCItem">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Batch Handle MTL QCItem By MTLNo</wsdl:documentation>
+      <wsdl:input message="tns:UpdMTLQCItemSoapIn" />
+      <wsdl:output message="tns:UpdMTLQCItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialPLMDoc">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">LoadMaterialPLMDoc</wsdl:documentation>
+      <wsdl:input message="tns:LoadMaterialPLMDocSoapIn" />
+      <wsdl:output message="tns:LoadMaterialPLMDocSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialDefrost">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load MaterialDefrost Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadMaterialDefrostSoapIn" />
+      <wsdl:output message="tns:LoadMaterialDefrostSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialDefrost">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add MaterialDefrost data</wsdl:documentation>
+      <wsdl:input message="tns:AddMaterialDefrostSoapIn" />
+      <wsdl:output message="tns:AddMaterialDefrostSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialDefrost">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit MaterialDefrost by MaterialNo,MaterialType</wsdl:documentation>
+      <wsdl:input message="tns:EditMaterialDefrostSoapIn" />
+      <wsdl:output message="tns:EditMaterialDefrostSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialDefrost">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete MaterialDefrost by MaterialNo,MaterialType</wsdl:documentation>
+      <wsdl:input message="tns:DelMaterialDefrostSoapIn" />
+      <wsdl:output message="tns:DelMaterialDefrostSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialDefrostByNo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load MaterialDefrost Data By MaterialNo</wsdl:documentation>
+      <wsdl:input message="tns:LoadMaterialDefrostByNoSoapIn" />
+      <wsdl:output message="tns:LoadMaterialDefrostByNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadECNLog">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load ECN Log</wsdl:documentation>
+      <wsdl:input message="tns:LoadECNLogSoapIn" />
+      <wsdl:output message="tns:LoadECNLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddECNLog">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add ECN Log</wsdl:documentation>
+      <wsdl:input message="tns:AddECNLogSoapIn" />
+      <wsdl:output message="tns:AddECNLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdECNLog">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit ECN Log</wsdl:documentation>
+      <wsdl:input message="tns:UpdECNLogSoapIn" />
+      <wsdl:output message="tns:UpdECNLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelECNLog">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete ECNLog By ECNSerial</wsdl:documentation>
+      <wsdl:input message="tns:DelECNLogSoapIn" />
+      <wsdl:output message="tns:DelECNLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdMaterialVendorMapFlag">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update MaterialVendorMap Flag</wsdl:documentation>
+      <wsdl:input message="tns:UpdMaterialVendorMapFlagSoapIn" />
+      <wsdl:output message="tns:UpdMaterialVendorMapFlagSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRiskValue">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Risk Value</wsdl:documentation>
+      <wsdl:input message="tns:GetRiskValueSoapIn" />
+      <wsdl:output message="tns:GetRiskValueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadQualityLog">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Quality Log</wsdl:documentation>
+      <wsdl:input message="tns:LoadQualityLogSoapIn" />
+      <wsdl:output message="tns:LoadQualityLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddQualityLog">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Quality Log</wsdl:documentation>
+      <wsdl:input message="tns:AddQualityLogSoapIn" />
+      <wsdl:output message="tns:AddQualityLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditorAddQualityLog">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Quality Log</wsdl:documentation>
+      <wsdl:input message="tns:EditorAddQualityLogSoapIn" />
+      <wsdl:output message="tns:EditorAddQualityLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteQualityLog">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete QualityLog By QualityFiles</wsdl:documentation>
+      <wsdl:input message="tns:DeleteQualityLogSoapIn" />
+      <wsdl:output message="tns:DeleteQualityLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowMaterialBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Show Material Basis Data</wsdl:documentation>
+      <wsdl:input message="tns:ShowMaterialBasisSoapIn" />
+      <wsdl:output message="tns:ShowMaterialBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialBasisByOrder">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Material Basis Data By Order</wsdl:documentation>
+      <wsdl:input message="tns:LoadMaterialBasisByOrderSoapIn" />
+      <wsdl:output message="tns:LoadMaterialBasisByOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMTLBarCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load MTLBarCode Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadMTLBarCodeSoapIn" />
+      <wsdl:output message="tns:LoadMTLBarCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMTLBarCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add MTLBarCode data</wsdl:documentation>
+      <wsdl:input message="tns:AddMTLBarCodeSoapIn" />
+      <wsdl:output message="tns:AddMTLBarCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditMTLBarCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified MaterialNo Data</wsdl:documentation>
+      <wsdl:input message="tns:EditMTLBarCodeSoapIn" />
+      <wsdl:output message="tns:EditMTLBarCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelMTLBarCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete MTLBarCode By Specified Material</wsdl:documentation>
+      <wsdl:input message="tns:DelMTLBarCodeSoapIn" />
+      <wsdl:output message="tns:DelMTLBarCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMTLMadeCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Material BarCode MadeCode Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadMTLMadeCodeSoapIn" />
+      <wsdl:output message="tns:LoadMTLMadeCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMTLBarCodePartial">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load MTLBarCodePartial Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadMTLBarCodePartialSoapIn" />
+      <wsdl:output message="tns:LoadMTLBarCodePartialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialNoBakeInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load MaterialNo Bake Info</wsdl:documentation>
+      <wsdl:input message="tns:LoadMaterialNoBakeInfoSoapIn" />
+      <wsdl:output message="tns:LoadMaterialNoBakeInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMoNoMaterialRack_Combine">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Combine MoNoMaterialRack</wsdl:documentation>
+      <wsdl:input message="tns:AddMoNoMaterialRack_CombineSoapIn" />
+      <wsdl:output message="tns:AddMoNoMaterialRack_CombineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMoNoMaterialRack_CheckOut">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">CheckOut MoNoMaterialRack</wsdl:documentation>
+      <wsdl:input message="tns:AddMoNoMaterialRack_CheckOutSoapIn" />
+      <wsdl:output message="tns:AddMoNoMaterialRack_CheckOutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowMaterialBake">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Show Material Bake Data</wsdl:documentation>
+      <wsdl:input message="tns:ShowMaterialBakeSoapIn" />
+      <wsdl:output message="tns:ShowMaterialBakeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialBake">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Material Bake</wsdl:documentation>
+      <wsdl:input message="tns:AddMaterialBakeSoapIn" />
+      <wsdl:output message="tns:AddMaterialBakeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialBake">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified Material Bake Data</wsdl:documentation>
+      <wsdl:input message="tns:EditMaterialBakeSoapIn" />
+      <wsdl:output message="tns:EditMaterialBakeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialBake">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete Material Bake By Specified MaterialNo</wsdl:documentation>
+      <wsdl:input message="tns:DelMaterialBakeSoapIn" />
+      <wsdl:output message="tns:DelMaterialBakeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveMaterialBake">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Approve Specified Material Bake Data by MaterialNo</wsdl:documentation>
+      <wsdl:input message="tns:ApproveMaterialBakeSoapIn" />
+      <wsdl:output message="tns:ApproveMaterialBakeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialRack_Combine">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Material Rack_Combine</wsdl:documentation>
+      <wsdl:input message="tns:LoadMaterialRack_CombineSoapIn" />
+      <wsdl:output message="tns:LoadMaterialRack_CombineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadPreprocessMaterialNo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Preprocess MaterialNo</wsdl:documentation>
+      <wsdl:input message="tns:LoadPreprocessMaterialNoSoapIn" />
+      <wsdl:output message="tns:LoadPreprocessMaterialNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadCUS_SMTMaterialConfig">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load CUS SMT Material Config</wsdl:documentation>
+      <wsdl:input message="tns:LoadCUS_SMTMaterialConfigSoapIn" />
+      <wsdl:output message="tns:LoadCUS_SMTMaterialConfigSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExeCUS_SMTMaterialConfig_Merge">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Merge SMT material Config</wsdl:documentation>
+      <wsdl:input message="tns:ExeCUS_SMTMaterialConfig_MergeSoapIn" />
+      <wsdl:output message="tns:ExeCUS_SMTMaterialConfig_MergeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsMTLSoap" type="tns:wsMTLSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoadMaterialType">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialType">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialType">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditMaterialType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialType">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveMaterialType">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ApproveMaterialType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialProperty">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialProperty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialProperty">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialProperty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialProperty">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditMaterialProperty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialProperty">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialProperty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveMaterialProperty">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ApproveMaterialProperty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialPropertyDefine">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialPropertyDefine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMTLBasisMinusProperty">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMTLBasisMinusProperty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialVendor">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialVendor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialVendor">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialVendor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialVendor">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditMaterialVendor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialVendor">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialVendor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveMaterialVendor">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ApproveMaterialVendor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialVendorContactor">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialVendorContactor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialVendorContactor">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialVendorContactor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialVendorContactor">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditMaterialVendorContactor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialVendorContactor">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialVendorContactor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditMaterialBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveMaterialBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ApproveMaterialBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialBasisDefine">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialBasisDefine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialGroupBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialGroupBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialGroupBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialGroupBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialGroupBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditMaterialGroupBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialGroupBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialGroupBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialGroupDetail">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialGroupDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialGroupDetail">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialGroupDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdMaterialGroupDetail">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/UpdMaterialGroupDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialGroupDetail">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialGroupDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialSubstitute">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialSubstitute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialVendorMap">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialVendorMap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadDistMaterialVendorMap">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadDistMaterialVendorMap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialVendorMap">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialVendorMap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialVendorMap">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditMaterialVendorMap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialVendorMap">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialVendorMap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CopyMaterial">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/CopyMaterial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMTLQCItem">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMTLQCItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMTLQCItem_MTLOnly">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMTLQCItem_MTLOnly" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdMTLQCItem">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/UpdMTLQCItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialPLMDoc">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialPLMDoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialDefrost">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialDefrost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialDefrost">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialDefrost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialDefrost">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditMaterialDefrost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialDefrost">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialDefrost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialDefrostByNo">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialDefrostByNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadECNLog">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadECNLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddECNLog">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddECNLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdECNLog">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/UpdECNLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelECNLog">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelECNLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdMaterialVendorMapFlag">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/UpdMaterialVendorMapFlag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRiskValue">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/GetRiskValue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadQualityLog">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadQualityLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddQualityLog">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddQualityLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditorAddQualityLog">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditorAddQualityLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteQualityLog">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DeleteQualityLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowMaterialBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ShowMaterialBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialBasisByOrder">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialBasisByOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMTLBarCode">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMTLBarCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMTLBarCode">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddMTLBarCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMTLBarCode">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditMTLBarCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMTLBarCode">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelMTLBarCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMTLMadeCode">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMTLMadeCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMTLBarCodePartial">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMTLBarCodePartial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialNoBakeInfo">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialNoBakeInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMoNoMaterialRack_Combine">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddMoNoMaterialRack_Combine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMoNoMaterialRack_CheckOut">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddMoNoMaterialRack_CheckOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowMaterialBake">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ShowMaterialBake" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialBake">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialBake" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialBake">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditMaterialBake" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialBake">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialBake" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveMaterialBake">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ApproveMaterialBake" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialRack_Combine">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialRack_Combine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadPreprocessMaterialNo">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadPreprocessMaterialNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadCUS_SMTMaterialConfig">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadCUS_SMTMaterialConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExeCUS_SMTMaterialConfig_Merge">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ExeCUS_SMTMaterialConfig_Merge" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsMTLSoap12" type="tns:wsMTLSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoadMaterialType">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialType">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialType">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditMaterialType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialType">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveMaterialType">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ApproveMaterialType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialProperty">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialProperty" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialProperty">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialProperty" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialProperty">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditMaterialProperty" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialProperty">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialProperty" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveMaterialProperty">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ApproveMaterialProperty" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialPropertyDefine">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialPropertyDefine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMTLBasisMinusProperty">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMTLBasisMinusProperty" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialVendor">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialVendor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialVendor">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialVendor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialVendor">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditMaterialVendor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialVendor">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialVendor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveMaterialVendor">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ApproveMaterialVendor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialVendorContactor">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialVendorContactor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialVendorContactor">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialVendorContactor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialVendorContactor">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditMaterialVendorContactor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialVendorContactor">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialVendorContactor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditMaterialBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveMaterialBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ApproveMaterialBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialBasisDefine">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialBasisDefine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialGroupBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialGroupBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialGroupBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialGroupBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialGroupBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditMaterialGroupBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialGroupBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialGroupBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialGroupDetail">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialGroupDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialGroupDetail">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialGroupDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdMaterialGroupDetail">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/UpdMaterialGroupDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialGroupDetail">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialGroupDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialSubstitute">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialSubstitute" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialVendorMap">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialVendorMap" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadDistMaterialVendorMap">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadDistMaterialVendorMap" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialVendorMap">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialVendorMap" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialVendorMap">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditMaterialVendorMap" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialVendorMap">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialVendorMap" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CopyMaterial">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/CopyMaterial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMTLQCItem">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMTLQCItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMTLQCItem_MTLOnly">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMTLQCItem_MTLOnly" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdMTLQCItem">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/UpdMTLQCItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialPLMDoc">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialPLMDoc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialDefrost">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialDefrost" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialDefrost">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialDefrost" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialDefrost">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditMaterialDefrost" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialDefrost">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialDefrost" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialDefrostByNo">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialDefrostByNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadECNLog">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadECNLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddECNLog">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddECNLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdECNLog">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/UpdECNLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelECNLog">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelECNLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdMaterialVendorMapFlag">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/UpdMaterialVendorMapFlag" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRiskValue">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/GetRiskValue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadQualityLog">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadQualityLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddQualityLog">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddQualityLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditorAddQualityLog">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditorAddQualityLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteQualityLog">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DeleteQualityLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowMaterialBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ShowMaterialBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialBasisByOrder">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialBasisByOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMTLBarCode">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMTLBarCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMTLBarCode">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddMTLBarCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMTLBarCode">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditMTLBarCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMTLBarCode">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelMTLBarCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMTLMadeCode">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMTLMadeCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMTLBarCodePartial">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMTLBarCodePartial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialNoBakeInfo">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialNoBakeInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMoNoMaterialRack_Combine">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddMoNoMaterialRack_Combine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMoNoMaterialRack_CheckOut">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddMoNoMaterialRack_CheckOut" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowMaterialBake">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ShowMaterialBake" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMaterialBake">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddMaterialBake" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMaterialBake">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditMaterialBake" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMaterialBake">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelMaterialBake" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveMaterialBake">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ApproveMaterialBake" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMaterialRack_Combine">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadMaterialRack_Combine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadPreprocessMaterialNo">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadPreprocessMaterialNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadCUS_SMTMaterialConfig">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadCUS_SMTMaterialConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExeCUS_SMTMaterialConfig_Merge">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ExeCUS_SMTMaterialConfig_Merge" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsMTL">
+    <wsdl:port name="wsMTLSoap" binding="tns:wsMTLSoap">
+      <soap:address location="http://localhost/MESws2005_Delta_STD/wsMTL/wsMTL.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsMTLSoap12" binding="tns:wsMTLSoap12">
+      <soap12:address location="http://localhost/MESws2005_Delta_STD/wsMTL/wsMTL.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

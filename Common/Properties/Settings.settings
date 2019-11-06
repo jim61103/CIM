@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Common.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Common_wsUSR_wsUSR" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://jj/MESws2005_Delta_STD/wsUSR/wsUSR.asmx</Value>
+    </Setting>
+    <Setting Name="Common_wsOP_wsOP" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/MESws2005_Delta_STD/wsOP/wsOP.asmx</Value>
+    </Setting>
+    <Setting Name="Common_wsWIP_wsWIP" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://jj/MESws2005_Delta_STD/wsWIP/wsWIP.asmx</Value>
+    </Setting>
+    <Setting Name="Common_wsPRD_wsPRD" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://jj/MESws2005_Delta_STD/wsPRD/wsPRD.asmx</Value>
+    </Setting>
+    <Setting Name="Common_wsOE_wsOE" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/MESws2005_Delta_STD/wsOE/wsOE.asmx</Value>
+    </Setting>
+    <Setting Name="Common_wsMTL_wsMTL" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/MESws2005_Delta_STD/wsMTL/wsMTL.asmx</Value>
+    </Setting>
+    <Setting Name="Common_wsEQP_wsEQP" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/MESws2005_Delta_std/wsEQP/wsEQP.asmx</Value>
+    </Setting>
+    <Setting Name="Common_wsEQP_Delta_wsEQP" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/MESws2005_Delta_CUS/wsEQP/wsEQP.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

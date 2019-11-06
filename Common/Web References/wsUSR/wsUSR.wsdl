@@ -1,0 +1,4065 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://mirlmes.itri.org.tw/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://mirlmes.itri.org.tw/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://mirlmes.itri.org.tw/">
+      <s:element name="LoadShiftExceptionTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadShiftExceptionTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadShiftExceptionTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadOperatorLoginException">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadOperatorLoginExceptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadOperatorLoginExceptionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddShiftExceptionTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddShiftExceptionTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddShiftExceptionTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOperatorLoginException">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOperatorLoginExceptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddOperatorLoginExceptionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadWIPOPWorkTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadWIPOPWorkTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadWIPOPWorkTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTotWIPWorkTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTotWIPWorkTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTotWIPWorkTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChkUserAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChkUserAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChkUserAccountResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChkUserSubOPPriv">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChkUserSubOPPrivResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChkUserSubOPPrivResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChkUserOPPriv">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChkUserOPPrivResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChkUserOPPrivResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserFormUsableControl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserFormUsableControlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadUserFormUsableControlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChkUserFunctionControlPriv">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChkUserFunctionControlPrivResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChkUserFunctionControlPrivResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditSetAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditSetAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditSetAccountResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadDepartmentBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadDepartmentBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadDepartmentBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddDepartmentBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddDepartmentBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddDepartmentBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditDepartmentBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditDepartmentBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditDepartmentBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelDepartmentBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelDepartmentBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelDepartmentBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveDepartmentBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveDepartmentBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApproveDepartmentBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadShiftBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadShiftBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadShiftBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddShiftBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddShiftBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddShiftBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditShiftBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditShiftBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditShiftBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelShiftBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelShiftBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelShiftBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveShiftBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveShiftBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApproveShiftBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetShift">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetShiftResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetShiftResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadExceptionBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadExceptionBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadExceptionBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExceptionBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExceptionBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExceptionBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditExceptionBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditExceptionBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditExceptionBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelExceptionBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelExceptionBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelExceptionBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserSecurity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserSecurityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadUserSecurityResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserSecurityDefine">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserSecurityDefineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadUserSecurityDefineResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUserSecurity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUserSecurityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddUserSecurityResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditUserSecurity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditUserSecurityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditUserSecurityResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangePassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangePasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChangePasswordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelUserSecurity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelUserSecurityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelUserSecurityResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChkUserSecurity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChkUserSecurityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChkUserSecurityResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChkUserPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChkUserPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChkUserPasswordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadLoginInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadLoginInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadLoginInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadUserBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMESUserNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMESUserNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMESUserNoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLicenseInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLicenseInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLicenseInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefreshIdleTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefreshIdleTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RefreshIdleTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearLofinInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearLofinInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClearLofinInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SyncLofinInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SyncLofinInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SyncLofinInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveUserSecurity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveUserSecurityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApproveUserSecurityResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserGroup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserGroupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadUserGroupResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUserGroup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUserGroupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddUserGroupResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelUserGroup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelUserGroupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelUserGroupResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdUserGroupByUserNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdUserGroupByUserNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdUserGroupByUserNoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdUserGroupByGroupNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdUserGroupByGroupNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdUserGroupByGroupNoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadGroupBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadGroupBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadGroupBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddGroupBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddGroupBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddGroupBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditGroupBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditGroupBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditGroupBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelGroupBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelGroupBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelGroupBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveGroupBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveGroupBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApproveGroupBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadGroupPriv">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadGroupPrivResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadGroupPrivResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddGroupPriv">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddGroupPrivResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddGroupPrivResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditGroupPriv">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditGroupPrivResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditGroupPrivResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelGroupPriv">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelGroupPrivResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelGroupPrivResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadGroupControlPriv">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadGroupControlPrivResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadGroupControlPrivResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadGroupPrivDefine">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadGroupPrivDefineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadGroupPrivDefineResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdGroupPriv">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdGroupPrivResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdGroupPrivResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserPriv">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserPrivResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadUserPrivResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserAgent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserAgentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetUserAgentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelUserAgent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelUserAgentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelUserAgentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserAgent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserAgentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadUserAgentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadWorkTimeTemplate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadWorkTimeTemplateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadWorkTimeTemplateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWorkTimeTemplate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWorkTimeTemplateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddWorkTimeTemplateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditWorkTimeTemplate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditWorkTimeTemplateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditWorkTimeTemplateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelWorkTimeTemplate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelWorkTimeTemplateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelWorkTimeTemplateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveWorkTimeTemplate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveWorkTimeTemplateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApproveWorkTimeTemplateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadWorkTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadWorkTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadWorkTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWorkTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWorkTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddWorkTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelWorkTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelWorkTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelWorkTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConfirmWorkTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConfirmWorkTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConfirmWorkTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelWorkTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelWorkTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CancelWorkTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdWorkTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdWorkTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdWorkTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Test">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadProductionSegment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadProductionSegmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadProductionSegmentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadLineBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadLineBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadLineBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddLineBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddLineBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddLineBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditLineBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditLineBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditLineBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelLineBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelLineBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelLineBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveLineBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveLineBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApproveLineBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadDepartmentUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadDepartmentUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadDepartmentUserResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadLineUserSetData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadLineUserSetDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadLineUserSetDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadLineUserSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadLineUserSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadLineUserSetResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddLineUserSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddLineUserSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddLineUserSetResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelLineUserSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelLineUserSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelLineUserSetResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChkLineUserSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChkLineUserSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChkLineUserSetResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserPrivilege">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserPrivilegeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadUserPrivilegeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdOperatorLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdOperatorLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdOperatorLoginResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdOperatorLogout">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdOperatorLogoutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdOperatorLogoutResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserBasisJoinLoginState">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserBasisJoinLoginStateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadUserBasisJoinLoginStateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserBasisJoinLoginLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserBasisJoinLoginLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadUserBasisJoinLoginLogResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadOperatorLoginState">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadOperatorLoginStateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadOperatorLoginStateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoadShiftExceptionTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadShiftExceptionTime" />
+  </wsdl:message>
+  <wsdl:message name="LoadShiftExceptionTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadShiftExceptionTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadOperatorLoginExceptionSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadOperatorLoginException" />
+  </wsdl:message>
+  <wsdl:message name="LoadOperatorLoginExceptionSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadOperatorLoginExceptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddShiftExceptionTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:AddShiftExceptionTime" />
+  </wsdl:message>
+  <wsdl:message name="AddShiftExceptionTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:AddShiftExceptionTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddOperatorLoginExceptionSoapIn">
+    <wsdl:part name="parameters" element="tns:AddOperatorLoginException" />
+  </wsdl:message>
+  <wsdl:message name="AddOperatorLoginExceptionSoapOut">
+    <wsdl:part name="parameters" element="tns:AddOperatorLoginExceptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadWIPOPWorkTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadWIPOPWorkTime" />
+  </wsdl:message>
+  <wsdl:message name="LoadWIPOPWorkTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadWIPOPWorkTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTotWIPWorkTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTotWIPWorkTime" />
+  </wsdl:message>
+  <wsdl:message name="GetTotWIPWorkTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTotWIPWorkTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChkUserAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:ChkUserAccount" />
+  </wsdl:message>
+  <wsdl:message name="ChkUserAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:ChkUserAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChkUserSubOPPrivSoapIn">
+    <wsdl:part name="parameters" element="tns:ChkUserSubOPPriv" />
+  </wsdl:message>
+  <wsdl:message name="ChkUserSubOPPrivSoapOut">
+    <wsdl:part name="parameters" element="tns:ChkUserSubOPPrivResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChkUserOPPrivSoapIn">
+    <wsdl:part name="parameters" element="tns:ChkUserOPPriv" />
+  </wsdl:message>
+  <wsdl:message name="ChkUserOPPrivSoapOut">
+    <wsdl:part name="parameters" element="tns:ChkUserOPPrivResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserFormUsableControlSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadUserFormUsableControl" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserFormUsableControlSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadUserFormUsableControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChkUserFunctionControlPrivSoapIn">
+    <wsdl:part name="parameters" element="tns:ChkUserFunctionControlPriv" />
+  </wsdl:message>
+  <wsdl:message name="ChkUserFunctionControlPrivSoapOut">
+    <wsdl:part name="parameters" element="tns:ChkUserFunctionControlPrivResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditSetAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:EditSetAccount" />
+  </wsdl:message>
+  <wsdl:message name="EditSetAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:EditSetAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadDepartmentBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadDepartmentBasis" />
+  </wsdl:message>
+  <wsdl:message name="LoadDepartmentBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadDepartmentBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddDepartmentBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:AddDepartmentBasis" />
+  </wsdl:message>
+  <wsdl:message name="AddDepartmentBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:AddDepartmentBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditDepartmentBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:EditDepartmentBasis" />
+  </wsdl:message>
+  <wsdl:message name="EditDepartmentBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:EditDepartmentBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelDepartmentBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:DelDepartmentBasis" />
+  </wsdl:message>
+  <wsdl:message name="DelDepartmentBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:DelDepartmentBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="ApproveDepartmentBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:ApproveDepartmentBasis" />
+  </wsdl:message>
+  <wsdl:message name="ApproveDepartmentBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:ApproveDepartmentBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadShiftBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadShiftBasis" />
+  </wsdl:message>
+  <wsdl:message name="LoadShiftBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadShiftBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddShiftBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:AddShiftBasis" />
+  </wsdl:message>
+  <wsdl:message name="AddShiftBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:AddShiftBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditShiftBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:EditShiftBasis" />
+  </wsdl:message>
+  <wsdl:message name="EditShiftBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:EditShiftBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelShiftBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:DelShiftBasis" />
+  </wsdl:message>
+  <wsdl:message name="DelShiftBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:DelShiftBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="ApproveShiftBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:ApproveShiftBasis" />
+  </wsdl:message>
+  <wsdl:message name="ApproveShiftBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:ApproveShiftBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetShiftSoapIn">
+    <wsdl:part name="parameters" element="tns:GetShift" />
+  </wsdl:message>
+  <wsdl:message name="GetShiftSoapOut">
+    <wsdl:part name="parameters" element="tns:GetShiftResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadExceptionBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadExceptionBasis" />
+  </wsdl:message>
+  <wsdl:message name="LoadExceptionBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadExceptionBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExceptionBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExceptionBasis" />
+  </wsdl:message>
+  <wsdl:message name="AddExceptionBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExceptionBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditExceptionBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:EditExceptionBasis" />
+  </wsdl:message>
+  <wsdl:message name="EditExceptionBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:EditExceptionBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelExceptionBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:DelExceptionBasis" />
+  </wsdl:message>
+  <wsdl:message name="DelExceptionBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:DelExceptionBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserSecuritySoapIn">
+    <wsdl:part name="parameters" element="tns:LoadUserSecurity" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserSecuritySoapOut">
+    <wsdl:part name="parameters" element="tns:LoadUserSecurityResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserSecurityDefineSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadUserSecurityDefine" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserSecurityDefineSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadUserSecurityDefineResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddUserSecuritySoapIn">
+    <wsdl:part name="parameters" element="tns:AddUserSecurity" />
+  </wsdl:message>
+  <wsdl:message name="AddUserSecuritySoapOut">
+    <wsdl:part name="parameters" element="tns:AddUserSecurityResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditUserSecuritySoapIn">
+    <wsdl:part name="parameters" element="tns:EditUserSecurity" />
+  </wsdl:message>
+  <wsdl:message name="EditUserSecuritySoapOut">
+    <wsdl:part name="parameters" element="tns:EditUserSecurityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangePasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangePassword" />
+  </wsdl:message>
+  <wsdl:message name="ChangePasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelUserSecuritySoapIn">
+    <wsdl:part name="parameters" element="tns:DelUserSecurity" />
+  </wsdl:message>
+  <wsdl:message name="DelUserSecuritySoapOut">
+    <wsdl:part name="parameters" element="tns:DelUserSecurityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChkUserSecuritySoapIn">
+    <wsdl:part name="parameters" element="tns:ChkUserSecurity" />
+  </wsdl:message>
+  <wsdl:message name="ChkUserSecuritySoapOut">
+    <wsdl:part name="parameters" element="tns:ChkUserSecurityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChkUserPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:ChkUserPassword" />
+  </wsdl:message>
+  <wsdl:message name="ChkUserPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:ChkUserPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadLoginInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadLoginInfo" />
+  </wsdl:message>
+  <wsdl:message name="LoadLoginInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadLoginInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadUserBasis" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadUserBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMESUserNoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMESUserNo" />
+  </wsdl:message>
+  <wsdl:message name="GetMESUserNoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMESUserNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLicenseInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLicenseInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetLicenseInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLicenseInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="RefreshIdleTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:RefreshIdleTime" />
+  </wsdl:message>
+  <wsdl:message name="RefreshIdleTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:RefreshIdleTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClearLofinInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:ClearLofinInfo" />
+  </wsdl:message>
+  <wsdl:message name="ClearLofinInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:ClearLofinInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="SyncLofinInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:SyncLofinInfo" />
+  </wsdl:message>
+  <wsdl:message name="SyncLofinInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:SyncLofinInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ApproveUserSecuritySoapIn">
+    <wsdl:part name="parameters" element="tns:ApproveUserSecurity" />
+  </wsdl:message>
+  <wsdl:message name="ApproveUserSecuritySoapOut">
+    <wsdl:part name="parameters" element="tns:ApproveUserSecurityResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserGroupSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadUserGroup" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserGroupSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadUserGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddUserGroupSoapIn">
+    <wsdl:part name="parameters" element="tns:AddUserGroup" />
+  </wsdl:message>
+  <wsdl:message name="AddUserGroupSoapOut">
+    <wsdl:part name="parameters" element="tns:AddUserGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelUserGroupSoapIn">
+    <wsdl:part name="parameters" element="tns:DelUserGroup" />
+  </wsdl:message>
+  <wsdl:message name="DelUserGroupSoapOut">
+    <wsdl:part name="parameters" element="tns:DelUserGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdUserGroupByUserNoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdUserGroupByUserNo" />
+  </wsdl:message>
+  <wsdl:message name="UpdUserGroupByUserNoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdUserGroupByUserNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdUserGroupByGroupNoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdUserGroupByGroupNo" />
+  </wsdl:message>
+  <wsdl:message name="UpdUserGroupByGroupNoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdUserGroupByGroupNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadGroupBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadGroupBasis" />
+  </wsdl:message>
+  <wsdl:message name="LoadGroupBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadGroupBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddGroupBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:AddGroupBasis" />
+  </wsdl:message>
+  <wsdl:message name="AddGroupBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:AddGroupBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditGroupBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:EditGroupBasis" />
+  </wsdl:message>
+  <wsdl:message name="EditGroupBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:EditGroupBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelGroupBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:DelGroupBasis" />
+  </wsdl:message>
+  <wsdl:message name="DelGroupBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:DelGroupBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="ApproveGroupBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:ApproveGroupBasis" />
+  </wsdl:message>
+  <wsdl:message name="ApproveGroupBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:ApproveGroupBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadGroupPrivSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadGroupPriv" />
+  </wsdl:message>
+  <wsdl:message name="LoadGroupPrivSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadGroupPrivResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddGroupPrivSoapIn">
+    <wsdl:part name="parameters" element="tns:AddGroupPriv" />
+  </wsdl:message>
+  <wsdl:message name="AddGroupPrivSoapOut">
+    <wsdl:part name="parameters" element="tns:AddGroupPrivResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditGroupPrivSoapIn">
+    <wsdl:part name="parameters" element="tns:EditGroupPriv" />
+  </wsdl:message>
+  <wsdl:message name="EditGroupPrivSoapOut">
+    <wsdl:part name="parameters" element="tns:EditGroupPrivResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelGroupPrivSoapIn">
+    <wsdl:part name="parameters" element="tns:DelGroupPriv" />
+  </wsdl:message>
+  <wsdl:message name="DelGroupPrivSoapOut">
+    <wsdl:part name="parameters" element="tns:DelGroupPrivResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadGroupControlPrivSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadGroupControlPriv" />
+  </wsdl:message>
+  <wsdl:message name="LoadGroupControlPrivSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadGroupControlPrivResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadGroupPrivDefineSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadGroupPrivDefine" />
+  </wsdl:message>
+  <wsdl:message name="LoadGroupPrivDefineSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadGroupPrivDefineResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdGroupPrivSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdGroupPriv" />
+  </wsdl:message>
+  <wsdl:message name="UpdGroupPrivSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdGroupPrivResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserPrivSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadUserPriv" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserPrivSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadUserPrivResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetUserAgentSoapIn">
+    <wsdl:part name="parameters" element="tns:SetUserAgent" />
+  </wsdl:message>
+  <wsdl:message name="SetUserAgentSoapOut">
+    <wsdl:part name="parameters" element="tns:SetUserAgentResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelUserAgentSoapIn">
+    <wsdl:part name="parameters" element="tns:DelUserAgent" />
+  </wsdl:message>
+  <wsdl:message name="DelUserAgentSoapOut">
+    <wsdl:part name="parameters" element="tns:DelUserAgentResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserAgentSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadUserAgent" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserAgentSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadUserAgentResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadWorkTimeTemplateSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadWorkTimeTemplate" />
+  </wsdl:message>
+  <wsdl:message name="LoadWorkTimeTemplateSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadWorkTimeTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddWorkTimeTemplateSoapIn">
+    <wsdl:part name="parameters" element="tns:AddWorkTimeTemplate" />
+  </wsdl:message>
+  <wsdl:message name="AddWorkTimeTemplateSoapOut">
+    <wsdl:part name="parameters" element="tns:AddWorkTimeTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditWorkTimeTemplateSoapIn">
+    <wsdl:part name="parameters" element="tns:EditWorkTimeTemplate" />
+  </wsdl:message>
+  <wsdl:message name="EditWorkTimeTemplateSoapOut">
+    <wsdl:part name="parameters" element="tns:EditWorkTimeTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelWorkTimeTemplateSoapIn">
+    <wsdl:part name="parameters" element="tns:DelWorkTimeTemplate" />
+  </wsdl:message>
+  <wsdl:message name="DelWorkTimeTemplateSoapOut">
+    <wsdl:part name="parameters" element="tns:DelWorkTimeTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ApproveWorkTimeTemplateSoapIn">
+    <wsdl:part name="parameters" element="tns:ApproveWorkTimeTemplate" />
+  </wsdl:message>
+  <wsdl:message name="ApproveWorkTimeTemplateSoapOut">
+    <wsdl:part name="parameters" element="tns:ApproveWorkTimeTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadWorkTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadWorkTime" />
+  </wsdl:message>
+  <wsdl:message name="LoadWorkTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadWorkTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddWorkTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:AddWorkTime" />
+  </wsdl:message>
+  <wsdl:message name="AddWorkTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:AddWorkTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelWorkTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:DelWorkTime" />
+  </wsdl:message>
+  <wsdl:message name="DelWorkTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:DelWorkTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmWorkTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:ConfirmWorkTime" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmWorkTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:ConfirmWorkTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="CancelWorkTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:CancelWorkTime" />
+  </wsdl:message>
+  <wsdl:message name="CancelWorkTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:CancelWorkTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdWorkTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdWorkTime" />
+  </wsdl:message>
+  <wsdl:message name="UpdWorkTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdWorkTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestSoapIn">
+    <wsdl:part name="parameters" element="tns:Test" />
+  </wsdl:message>
+  <wsdl:message name="TestSoapOut">
+    <wsdl:part name="parameters" element="tns:TestResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadProductionSegmentSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadProductionSegment" />
+  </wsdl:message>
+  <wsdl:message name="LoadProductionSegmentSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadProductionSegmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadLineBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadLineBasis" />
+  </wsdl:message>
+  <wsdl:message name="LoadLineBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadLineBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddLineBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:AddLineBasis" />
+  </wsdl:message>
+  <wsdl:message name="AddLineBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:AddLineBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditLineBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:EditLineBasis" />
+  </wsdl:message>
+  <wsdl:message name="EditLineBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:EditLineBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelLineBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:DelLineBasis" />
+  </wsdl:message>
+  <wsdl:message name="DelLineBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:DelLineBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="ApproveLineBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:ApproveLineBasis" />
+  </wsdl:message>
+  <wsdl:message name="ApproveLineBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:ApproveLineBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadDepartmentUserSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadDepartmentUser" />
+  </wsdl:message>
+  <wsdl:message name="LoadDepartmentUserSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadDepartmentUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadLineUserSetDataSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadLineUserSetData" />
+  </wsdl:message>
+  <wsdl:message name="LoadLineUserSetDataSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadLineUserSetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadLineUserSetSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadLineUserSet" />
+  </wsdl:message>
+  <wsdl:message name="LoadLineUserSetSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadLineUserSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddLineUserSetSoapIn">
+    <wsdl:part name="parameters" element="tns:AddLineUserSet" />
+  </wsdl:message>
+  <wsdl:message name="AddLineUserSetSoapOut">
+    <wsdl:part name="parameters" element="tns:AddLineUserSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelLineUserSetSoapIn">
+    <wsdl:part name="parameters" element="tns:DelLineUserSet" />
+  </wsdl:message>
+  <wsdl:message name="DelLineUserSetSoapOut">
+    <wsdl:part name="parameters" element="tns:DelLineUserSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChkLineUserSetSoapIn">
+    <wsdl:part name="parameters" element="tns:ChkLineUserSet" />
+  </wsdl:message>
+  <wsdl:message name="ChkLineUserSetSoapOut">
+    <wsdl:part name="parameters" element="tns:ChkLineUserSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserPrivilegeSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadUserPrivilege" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserPrivilegeSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadUserPrivilegeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdOperatorLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdOperatorLogin" />
+  </wsdl:message>
+  <wsdl:message name="UpdOperatorLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdOperatorLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdOperatorLogoutSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdOperatorLogout" />
+  </wsdl:message>
+  <wsdl:message name="UpdOperatorLogoutSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdOperatorLogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserBasisJoinLoginStateSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadUserBasisJoinLoginState" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserBasisJoinLoginStateSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadUserBasisJoinLoginStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserBasisJoinLoginLogSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadUserBasisJoinLoginLog" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserBasisJoinLoginLogSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadUserBasisJoinLoginLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadOperatorLoginStateSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadOperatorLoginState" />
+  </wsdl:message>
+  <wsdl:message name="LoadOperatorLoginStateSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadOperatorLoginStateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsUSRSoap">
+    <wsdl:operation name="LoadShiftExceptionTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Shift Exception Time</wsdl:documentation>
+      <wsdl:input message="tns:LoadShiftExceptionTimeSoapIn" />
+      <wsdl:output message="tns:LoadShiftExceptionTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadOperatorLoginException">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Operator Login Exception</wsdl:documentation>
+      <wsdl:input message="tns:LoadOperatorLoginExceptionSoapIn" />
+      <wsdl:output message="tns:LoadOperatorLoginExceptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddShiftExceptionTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Shift Exception Time</wsdl:documentation>
+      <wsdl:input message="tns:AddShiftExceptionTimeSoapIn" />
+      <wsdl:output message="tns:AddShiftExceptionTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOperatorLoginException">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Operator Login Exception</wsdl:documentation>
+      <wsdl:input message="tns:AddOperatorLoginExceptionSoapIn" />
+      <wsdl:output message="tns:AddOperatorLoginExceptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadWIPOPWorkTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load WIP OP WorkTime</wsdl:documentation>
+      <wsdl:input message="tns:LoadWIPOPWorkTimeSoapIn" />
+      <wsdl:output message="tns:LoadWIPOPWorkTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotWIPWorkTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Total WIP OP WorkTime by LoginSerial</wsdl:documentation>
+      <wsdl:input message="tns:GetTotWIPWorkTimeSoapIn" />
+      <wsdl:output message="tns:GetTotWIPWorkTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChkUserAccount">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Check account and return userno,username</wsdl:documentation>
+      <wsdl:input message="tns:ChkUserAccountSoapIn" />
+      <wsdl:output message="tns:ChkUserAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChkUserSubOPPriv">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Check SubOPNo Priv and return True or False</wsdl:documentation>
+      <wsdl:input message="tns:ChkUserSubOPPrivSoapIn" />
+      <wsdl:output message="tns:ChkUserSubOPPrivSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChkUserOPPriv">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Check OPNo And SubOPNo Priv and return True or False</wsdl:documentation>
+      <wsdl:input message="tns:ChkUserOPPrivSoapIn" />
+      <wsdl:output message="tns:ChkUserOPPrivSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserFormUsableControl">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Usable Controls of the Form</wsdl:documentation>
+      <wsdl:input message="tns:LoadUserFormUsableControlSoapIn" />
+      <wsdl:output message="tns:LoadUserFormUsableControlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChkUserFunctionControlPriv">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Check Form Control Priv and return True or False</wsdl:documentation>
+      <wsdl:input message="tns:ChkUserFunctionControlPrivSoapIn" />
+      <wsdl:output message="tns:ChkUserFunctionControlPrivSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditSetAccount">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit User Account Data</wsdl:documentation>
+      <wsdl:input message="tns:EditSetAccountSoapIn" />
+      <wsdl:output message="tns:EditSetAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadDepartmentBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Department Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadDepartmentBasisSoapIn" />
+      <wsdl:output message="tns:LoadDepartmentBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDepartmentBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Department data</wsdl:documentation>
+      <wsdl:input message="tns:AddDepartmentBasisSoapIn" />
+      <wsdl:output message="tns:AddDepartmentBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditDepartmentBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified Department Data by DepartmentNo</wsdl:documentation>
+      <wsdl:input message="tns:EditDepartmentBasisSoapIn" />
+      <wsdl:output message="tns:EditDepartmentBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelDepartmentBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete DepartmentBasis By Specified DepartmentNo</wsdl:documentation>
+      <wsdl:input message="tns:DelDepartmentBasisSoapIn" />
+      <wsdl:output message="tns:DelDepartmentBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveDepartmentBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Approve DepartmentBasis Data By Specified DepartmentNo</wsdl:documentation>
+      <wsdl:input message="tns:ApproveDepartmentBasisSoapIn" />
+      <wsdl:output message="tns:ApproveDepartmentBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadShiftBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Shift Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadShiftBasisSoapIn" />
+      <wsdl:output message="tns:LoadShiftBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddShiftBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Shift data</wsdl:documentation>
+      <wsdl:input message="tns:AddShiftBasisSoapIn" />
+      <wsdl:output message="tns:AddShiftBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditShiftBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified Shift Data by ShiftNo</wsdl:documentation>
+      <wsdl:input message="tns:EditShiftBasisSoapIn" />
+      <wsdl:output message="tns:EditShiftBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelShiftBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete ShiftBasis By Specified ShiftNo</wsdl:documentation>
+      <wsdl:input message="tns:DelShiftBasisSoapIn" />
+      <wsdl:output message="tns:DelShiftBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveShiftBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Approve ShiftBasis Data By Specified ShiftNo</wsdl:documentation>
+      <wsdl:input message="tns:ApproveShiftBasisSoapIn" />
+      <wsdl:output message="tns:ApproveShiftBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShift">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get ShiftNo by UserNo,WorkTime</wsdl:documentation>
+      <wsdl:input message="tns:GetShiftSoapIn" />
+      <wsdl:output message="tns:GetShiftSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadExceptionBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Exception Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadExceptionBasisSoapIn" />
+      <wsdl:output message="tns:LoadExceptionBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExceptionBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add ExceptionItem data</wsdl:documentation>
+      <wsdl:input message="tns:AddExceptionBasisSoapIn" />
+      <wsdl:output message="tns:AddExceptionBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditExceptionBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified ExceptionItem Data by ExceptionItemNo</wsdl:documentation>
+      <wsdl:input message="tns:EditExceptionBasisSoapIn" />
+      <wsdl:output message="tns:EditExceptionBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelExceptionBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete ExceptionItem By Specified ExceptionItemNo</wsdl:documentation>
+      <wsdl:input message="tns:DelExceptionBasisSoapIn" />
+      <wsdl:output message="tns:DelExceptionBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserSecurity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load UserSecurity Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadUserSecuritySoapIn" />
+      <wsdl:output message="tns:LoadUserSecuritySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserSecurityDefine">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load relatived data of define UserSecurity which will be Control</wsdl:documentation>
+      <wsdl:input message="tns:LoadUserSecurityDefineSoapIn" />
+      <wsdl:output message="tns:LoadUserSecurityDefineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUserSecurity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add UserSecurity data</wsdl:documentation>
+      <wsdl:input message="tns:AddUserSecuritySoapIn" />
+      <wsdl:output message="tns:AddUserSecuritySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditUserSecurity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified UserSecurity Data by userno</wsdl:documentation>
+      <wsdl:input message="tns:EditUserSecuritySoapIn" />
+      <wsdl:output message="tns:EditUserSecuritySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Change User Password</wsdl:documentation>
+      <wsdl:input message="tns:ChangePasswordSoapIn" />
+      <wsdl:output message="tns:ChangePasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelUserSecurity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete UserSecurity By Specified userno</wsdl:documentation>
+      <wsdl:input message="tns:DelUserSecuritySoapIn" />
+      <wsdl:output message="tns:DelUserSecuritySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChkUserSecurity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Check UserSecurity Data</wsdl:documentation>
+      <wsdl:input message="tns:ChkUserSecuritySoapIn" />
+      <wsdl:output message="tns:ChkUserSecuritySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChkUserPassword">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Check user password and return username,userlevel</wsdl:documentation>
+      <wsdl:input message="tns:ChkUserPasswordSoapIn" />
+      <wsdl:output message="tns:ChkUserPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadLoginInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Login Information Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadLoginInfoSoapIn" />
+      <wsdl:output message="tns:LoadLoginInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load UserBasis Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadUserBasisSoapIn" />
+      <wsdl:output message="tns:LoadUserBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMESUserNo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Mes User No</wsdl:documentation>
+      <wsdl:input message="tns:GetMESUserNoSoapIn" />
+      <wsdl:output message="tns:GetMESUserNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get License Information</wsdl:documentation>
+      <wsdl:input message="tns:GetLicenseInfoSoapIn" />
+      <wsdl:output message="tns:GetLicenseInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RefreshIdleTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Reresh User Idle Time!</wsdl:documentation>
+      <wsdl:input message="tns:RefreshIdleTimeSoapIn" />
+      <wsdl:output message="tns:RefreshIdleTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearLofinInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Clear User's Login Information</wsdl:documentation>
+      <wsdl:input message="tns:ClearLofinInfoSoapIn" />
+      <wsdl:output message="tns:ClearLofinInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SyncLofinInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Make Login Information be  Synchronize Between Cleint and Sever</wsdl:documentation>
+      <wsdl:input message="tns:SyncLofinInfoSoapIn" />
+      <wsdl:output message="tns:SyncLofinInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveUserSecurity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Approve User Security Data By Specified userno</wsdl:documentation>
+      <wsdl:input message="tns:ApproveUserSecuritySoapIn" />
+      <wsdl:output message="tns:ApproveUserSecuritySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserGroup">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load UserGroup Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadUserGroupSoapIn" />
+      <wsdl:output message="tns:LoadUserGroupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUserGroup">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add UserGroup data</wsdl:documentation>
+      <wsdl:input message="tns:AddUserGroupSoapIn" />
+      <wsdl:output message="tns:AddUserGroupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelUserGroup">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete UserGroup By Specified UserNo or GroupNo</wsdl:documentation>
+      <wsdl:input message="tns:DelUserGroupSoapIn" />
+      <wsdl:output message="tns:DelUserGroupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdUserGroupByUserNo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Batch Edit UserGroup data by UserNo</wsdl:documentation>
+      <wsdl:input message="tns:UpdUserGroupByUserNoSoapIn" />
+      <wsdl:output message="tns:UpdUserGroupByUserNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdUserGroupByGroupNo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Batch Edit UserGroup data by GroupNo</wsdl:documentation>
+      <wsdl:input message="tns:UpdUserGroupByGroupNoSoapIn" />
+      <wsdl:output message="tns:UpdUserGroupByGroupNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadGroupBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Group Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadGroupBasisSoapIn" />
+      <wsdl:output message="tns:LoadGroupBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddGroupBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Group data</wsdl:documentation>
+      <wsdl:input message="tns:AddGroupBasisSoapIn" />
+      <wsdl:output message="tns:AddGroupBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditGroupBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified Group Data by GroupNo</wsdl:documentation>
+      <wsdl:input message="tns:EditGroupBasisSoapIn" />
+      <wsdl:output message="tns:EditGroupBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelGroupBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete GroupBasis By Specified GroupNo</wsdl:documentation>
+      <wsdl:input message="tns:DelGroupBasisSoapIn" />
+      <wsdl:output message="tns:DelGroupBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveGroupBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Approve GroupBasis Data By Specified GroupNo</wsdl:documentation>
+      <wsdl:input message="tns:ApproveGroupBasisSoapIn" />
+      <wsdl:output message="tns:ApproveGroupBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadGroupPriv">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Group Privilege</wsdl:documentation>
+      <wsdl:input message="tns:LoadGroupPrivSoapIn" />
+      <wsdl:output message="tns:LoadGroupPrivSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddGroupPriv">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Group Privilege Data</wsdl:documentation>
+      <wsdl:input message="tns:AddGroupPrivSoapIn" />
+      <wsdl:output message="tns:AddGroupPrivSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditGroupPriv">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified Group Privilege by GroupNo,PrivType,PrivNo</wsdl:documentation>
+      <wsdl:input message="tns:EditGroupPrivSoapIn" />
+      <wsdl:output message="tns:EditGroupPrivSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelGroupPriv">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete GroupPriv By Specified GroupNo or PrivType or PrivNo</wsdl:documentation>
+      <wsdl:input message="tns:DelGroupPrivSoapIn" />
+      <wsdl:output message="tns:DelGroupPrivSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadGroupControlPriv">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Group Control Privilege</wsdl:documentation>
+      <wsdl:input message="tns:LoadGroupControlPrivSoapIn" />
+      <wsdl:output message="tns:LoadGroupControlPrivSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadGroupPrivDefine">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load relatived data of set group privilege</wsdl:documentation>
+      <wsdl:input message="tns:LoadGroupPrivDefineSoapIn" />
+      <wsdl:output message="tns:LoadGroupPrivDefineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdGroupPriv">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Batch update group privilege data by specified GroupNo</wsdl:documentation>
+      <wsdl:input message="tns:UpdGroupPrivSoapIn" />
+      <wsdl:output message="tns:UpdGroupPrivSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserPriv">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load User's Privilege and Privilege's Module By UserNo,GroupNo,ModuleNo,FunctionNo</wsdl:documentation>
+      <wsdl:input message="tns:LoadUserPrivSoapIn" />
+      <wsdl:output message="tns:LoadUserPrivSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetUserAgent">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Set User Agent</wsdl:documentation>
+      <wsdl:input message="tns:SetUserAgentSoapIn" />
+      <wsdl:output message="tns:SetUserAgentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelUserAgent">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete User Agent By AgentOf and AgentDate</wsdl:documentation>
+      <wsdl:input message="tns:DelUserAgentSoapIn" />
+      <wsdl:output message="tns:DelUserAgentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserAgent">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load User Agent Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadUserAgentSoapIn" />
+      <wsdl:output message="tns:LoadUserAgentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadWorkTimeTemplate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Work Time Template Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadWorkTimeTemplateSoapIn" />
+      <wsdl:output message="tns:LoadWorkTimeTemplateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkTimeTemplate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Work Time Template</wsdl:documentation>
+      <wsdl:input message="tns:AddWorkTimeTemplateSoapIn" />
+      <wsdl:output message="tns:AddWorkTimeTemplateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditWorkTimeTemplate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified WorkTimeTemplate Data by Template No</wsdl:documentation>
+      <wsdl:input message="tns:EditWorkTimeTemplateSoapIn" />
+      <wsdl:output message="tns:EditWorkTimeTemplateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelWorkTimeTemplate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete Worktime Template By Specified TemplateNo</wsdl:documentation>
+      <wsdl:input message="tns:DelWorkTimeTemplateSoapIn" />
+      <wsdl:output message="tns:DelWorkTimeTemplateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveWorkTimeTemplate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Approve WorkTime Template By Specified TemplateNo</wsdl:documentation>
+      <wsdl:input message="tns:ApproveWorkTimeTemplateSoapIn" />
+      <wsdl:output message="tns:ApproveWorkTimeTemplateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadWorkTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Work Time Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadWorkTimeSoapIn" />
+      <wsdl:output message="tns:LoadWorkTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Work Time</wsdl:documentation>
+      <wsdl:input message="tns:AddWorkTimeSoapIn" />
+      <wsdl:output message="tns:AddWorkTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelWorkTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete Worktime By Specified Key Value</wsdl:documentation>
+      <wsdl:input message="tns:DelWorkTimeSoapIn" />
+      <wsdl:output message="tns:DelWorkTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmWorkTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"> Confirm WorkTime By Specified Work Month</wsdl:documentation>
+      <wsdl:input message="tns:ConfirmWorkTimeSoapIn" />
+      <wsdl:output message="tns:ConfirmWorkTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelWorkTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"> Cancel WorkTime By Specified Work Month</wsdl:documentation>
+      <wsdl:input message="tns:CancelWorkTimeSoapIn" />
+      <wsdl:output message="tns:CancelWorkTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdWorkTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Batch update WorkTime by specified WorkMonth</wsdl:documentation>
+      <wsdl:input message="tns:UpdWorkTimeSoapIn" />
+      <wsdl:output message="tns:UpdWorkTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service and database connection test</wsdl:documentation>
+      <wsdl:input message="tns:TestSoapIn" />
+      <wsdl:output message="tns:TestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadProductionSegment">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Production Segment</wsdl:documentation>
+      <wsdl:input message="tns:LoadProductionSegmentSoapIn" />
+      <wsdl:output message="tns:LoadProductionSegmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadLineBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Line Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadLineBasisSoapIn" />
+      <wsdl:output message="tns:LoadLineBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddLineBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Line data</wsdl:documentation>
+      <wsdl:input message="tns:AddLineBasisSoapIn" />
+      <wsdl:output message="tns:AddLineBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditLineBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified Line Data by LineNo</wsdl:documentation>
+      <wsdl:input message="tns:EditLineBasisSoapIn" />
+      <wsdl:output message="tns:EditLineBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelLineBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete LineBasis By Specified LineNo</wsdl:documentation>
+      <wsdl:input message="tns:DelLineBasisSoapIn" />
+      <wsdl:output message="tns:DelLineBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveLineBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Approve LineBasis Data By Specified LineNo</wsdl:documentation>
+      <wsdl:input message="tns:ApproveLineBasisSoapIn" />
+      <wsdl:output message="tns:ApproveLineBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadDepartmentUser">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load User Data By Specified DepartmentNo</wsdl:documentation>
+      <wsdl:input message="tns:LoadDepartmentUserSoapIn" />
+      <wsdl:output message="tns:LoadDepartmentUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadLineUserSetData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load LineUserSet Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadLineUserSetDataSoapIn" />
+      <wsdl:output message="tns:LoadLineUserSetDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadLineUserSet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load LineUserSet Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadLineUserSetSoapIn" />
+      <wsdl:output message="tns:LoadLineUserSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddLineUserSet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add LineUserSet data</wsdl:documentation>
+      <wsdl:input message="tns:AddLineUserSetSoapIn" />
+      <wsdl:output message="tns:AddLineUserSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelLineUserSet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete Specified LineUserSet By  PDDATE,SHIFTNO,PDLINENO</wsdl:documentation>
+      <wsdl:input message="tns:DelLineUserSetSoapIn" />
+      <wsdl:output message="tns:DelLineUserSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChkLineUserSet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Check LineUserSet Data</wsdl:documentation>
+      <wsdl:input message="tns:ChkLineUserSetSoapIn" />
+      <wsdl:output message="tns:ChkLineUserSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserPrivilege">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load User's Privilege By UserNo,FunctionNo,GroupNo,ModuleNo</wsdl:documentation>
+      <wsdl:input message="tns:LoadUserPrivilegeSoapIn" />
+      <wsdl:output message="tns:LoadUserPrivilegeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdOperatorLogin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Execute Operator Login</wsdl:documentation>
+      <wsdl:input message="tns:UpdOperatorLoginSoapIn" />
+      <wsdl:output message="tns:UpdOperatorLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdOperatorLogout">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Execute Operator Logout</wsdl:documentation>
+      <wsdl:input message="tns:UpdOperatorLogoutSoapIn" />
+      <wsdl:output message="tns:UpdOperatorLogoutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserBasisJoinLoginState">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">LoadUserBasis Join LoginState</wsdl:documentation>
+      <wsdl:input message="tns:LoadUserBasisJoinLoginStateSoapIn" />
+      <wsdl:output message="tns:LoadUserBasisJoinLoginStateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserBasisJoinLoginLog">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load User Basis Join Operator Login Log</wsdl:documentation>
+      <wsdl:input message="tns:LoadUserBasisJoinLoginLogSoapIn" />
+      <wsdl:output message="tns:LoadUserBasisJoinLoginLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadOperatorLoginState">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Operator Login State</wsdl:documentation>
+      <wsdl:input message="tns:LoadOperatorLoginStateSoapIn" />
+      <wsdl:output message="tns:LoadOperatorLoginStateSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsUSRSoap" type="tns:wsUSRSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoadShiftExceptionTime">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadShiftExceptionTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadOperatorLoginException">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadOperatorLoginException" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddShiftExceptionTime">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddShiftExceptionTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOperatorLoginException">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddOperatorLoginException" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadWIPOPWorkTime">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadWIPOPWorkTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotWIPWorkTime">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/GetTotWIPWorkTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkUserAccount">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ChkUserAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkUserSubOPPriv">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ChkUserSubOPPriv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkUserOPPriv">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ChkUserOPPriv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserFormUsableControl">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadUserFormUsableControl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkUserFunctionControlPriv">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ChkUserFunctionControlPriv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditSetAccount">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditSetAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadDepartmentBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadDepartmentBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDepartmentBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddDepartmentBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditDepartmentBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditDepartmentBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelDepartmentBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelDepartmentBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveDepartmentBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ApproveDepartmentBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadShiftBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadShiftBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddShiftBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddShiftBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditShiftBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditShiftBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelShiftBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelShiftBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveShiftBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ApproveShiftBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShift">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/GetShift" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadExceptionBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadExceptionBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExceptionBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddExceptionBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditExceptionBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditExceptionBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelExceptionBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelExceptionBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserSecurity">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadUserSecurity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserSecurityDefine">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadUserSecurityDefine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserSecurity">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddUserSecurity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditUserSecurity">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditUserSecurity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ChangePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelUserSecurity">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelUserSecurity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkUserSecurity">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ChkUserSecurity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkUserPassword">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ChkUserPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadLoginInfo">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadLoginInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadUserBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMESUserNo">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/GetMESUserNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseInfo">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/GetLicenseInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefreshIdleTime">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/RefreshIdleTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearLofinInfo">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ClearLofinInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SyncLofinInfo">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/SyncLofinInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveUserSecurity">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ApproveUserSecurity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserGroup">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadUserGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserGroup">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddUserGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelUserGroup">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelUserGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdUserGroupByUserNo">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/UpdUserGroupByUserNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdUserGroupByGroupNo">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/UpdUserGroupByGroupNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadGroupBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadGroupBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddGroupBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddGroupBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditGroupBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditGroupBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelGroupBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelGroupBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveGroupBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ApproveGroupBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadGroupPriv">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadGroupPriv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddGroupPriv">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddGroupPriv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditGroupPriv">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditGroupPriv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelGroupPriv">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelGroupPriv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadGroupControlPriv">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadGroupControlPriv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadGroupPrivDefine">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadGroupPrivDefine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdGroupPriv">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/UpdGroupPriv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserPriv">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadUserPriv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserAgent">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/SetUserAgent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelUserAgent">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelUserAgent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserAgent">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadUserAgent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadWorkTimeTemplate">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadWorkTimeTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkTimeTemplate">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddWorkTimeTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditWorkTimeTemplate">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditWorkTimeTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelWorkTimeTemplate">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelWorkTimeTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveWorkTimeTemplate">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ApproveWorkTimeTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadWorkTime">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadWorkTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkTime">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddWorkTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelWorkTime">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelWorkTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmWorkTime">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ConfirmWorkTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelWorkTime">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/CancelWorkTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdWorkTime">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/UpdWorkTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/Test" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadProductionSegment">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadProductionSegment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadLineBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadLineBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddLineBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddLineBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditLineBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/EditLineBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelLineBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelLineBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveLineBasis">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ApproveLineBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadDepartmentUser">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadDepartmentUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadLineUserSetData">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadLineUserSetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadLineUserSet">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadLineUserSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddLineUserSet">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/AddLineUserSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelLineUserSet">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/DelLineUserSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkLineUserSet">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/ChkLineUserSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserPrivilege">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadUserPrivilege" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdOperatorLogin">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/UpdOperatorLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdOperatorLogout">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/UpdOperatorLogout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserBasisJoinLoginState">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadUserBasisJoinLoginState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserBasisJoinLoginLog">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadUserBasisJoinLoginLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadOperatorLoginState">
+      <soap:operation soapAction="http://mirlmes.itri.org.tw/LoadOperatorLoginState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsUSRSoap12" type="tns:wsUSRSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoadShiftExceptionTime">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadShiftExceptionTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadOperatorLoginException">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadOperatorLoginException" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddShiftExceptionTime">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddShiftExceptionTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOperatorLoginException">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddOperatorLoginException" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadWIPOPWorkTime">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadWIPOPWorkTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotWIPWorkTime">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/GetTotWIPWorkTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkUserAccount">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ChkUserAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkUserSubOPPriv">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ChkUserSubOPPriv" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkUserOPPriv">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ChkUserOPPriv" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserFormUsableControl">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadUserFormUsableControl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkUserFunctionControlPriv">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ChkUserFunctionControlPriv" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditSetAccount">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditSetAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadDepartmentBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadDepartmentBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDepartmentBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddDepartmentBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditDepartmentBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditDepartmentBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelDepartmentBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelDepartmentBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveDepartmentBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ApproveDepartmentBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadShiftBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadShiftBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddShiftBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddShiftBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditShiftBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditShiftBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelShiftBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelShiftBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveShiftBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ApproveShiftBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShift">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/GetShift" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadExceptionBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadExceptionBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExceptionBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddExceptionBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditExceptionBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditExceptionBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelExceptionBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelExceptionBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserSecurity">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadUserSecurity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserSecurityDefine">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadUserSecurityDefine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserSecurity">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddUserSecurity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditUserSecurity">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditUserSecurity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ChangePassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelUserSecurity">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelUserSecurity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkUserSecurity">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ChkUserSecurity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkUserPassword">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ChkUserPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadLoginInfo">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadLoginInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadUserBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMESUserNo">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/GetMESUserNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseInfo">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/GetLicenseInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefreshIdleTime">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/RefreshIdleTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearLofinInfo">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ClearLofinInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SyncLofinInfo">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/SyncLofinInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveUserSecurity">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ApproveUserSecurity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserGroup">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadUserGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserGroup">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddUserGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelUserGroup">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelUserGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdUserGroupByUserNo">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/UpdUserGroupByUserNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdUserGroupByGroupNo">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/UpdUserGroupByGroupNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadGroupBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadGroupBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddGroupBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddGroupBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditGroupBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditGroupBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelGroupBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelGroupBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveGroupBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ApproveGroupBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadGroupPriv">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadGroupPriv" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddGroupPriv">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddGroupPriv" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditGroupPriv">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditGroupPriv" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelGroupPriv">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelGroupPriv" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadGroupControlPriv">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadGroupControlPriv" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadGroupPrivDefine">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadGroupPrivDefine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdGroupPriv">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/UpdGroupPriv" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserPriv">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadUserPriv" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserAgent">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/SetUserAgent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelUserAgent">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelUserAgent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserAgent">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadUserAgent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadWorkTimeTemplate">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadWorkTimeTemplate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkTimeTemplate">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddWorkTimeTemplate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditWorkTimeTemplate">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditWorkTimeTemplate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelWorkTimeTemplate">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelWorkTimeTemplate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveWorkTimeTemplate">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ApproveWorkTimeTemplate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadWorkTime">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadWorkTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkTime">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddWorkTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelWorkTime">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelWorkTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmWorkTime">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ConfirmWorkTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelWorkTime">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/CancelWorkTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdWorkTime">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/UpdWorkTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/Test" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadProductionSegment">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadProductionSegment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadLineBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadLineBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddLineBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddLineBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditLineBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/EditLineBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelLineBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelLineBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveLineBasis">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ApproveLineBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadDepartmentUser">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadDepartmentUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadLineUserSetData">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadLineUserSetData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadLineUserSet">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadLineUserSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddLineUserSet">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/AddLineUserSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelLineUserSet">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/DelLineUserSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkLineUserSet">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/ChkLineUserSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserPrivilege">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadUserPrivilege" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdOperatorLogin">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/UpdOperatorLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdOperatorLogout">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/UpdOperatorLogout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserBasisJoinLoginState">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadUserBasisJoinLoginState" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserBasisJoinLoginLog">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadUserBasisJoinLoginLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadOperatorLoginState">
+      <soap12:operation soapAction="http://mirlmes.itri.org.tw/LoadOperatorLoginState" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsUSR">
+    <wsdl:port name="wsUSRSoap" binding="tns:wsUSRSoap">
+      <soap:address location="http://jj/MESws2005_Delta_STD/wsUSR/wsUSR.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsUSRSoap12" binding="tns:wsUSRSoap12">
+      <soap12:address location="http://jj/MESws2005_Delta_STD/wsUSR/wsUSR.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

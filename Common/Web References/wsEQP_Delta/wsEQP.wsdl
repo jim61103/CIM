@@ -1,0 +1,1915 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="AddEQPAccChgType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddEQPAccChgTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddEQPAccChgTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditEQPAccChgType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditEQPAccChgTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditEQPAccChgTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelEQPAccChgType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelEQPAccChgTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelEQPAccChgTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadEQPAccChgType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadEQPAccChgTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadEQPAccChgTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CopyEQPAccChgType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CopyEQPAccChgTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CopyEQPAccChgTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddEQPAccChgDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddEQPAccChgDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddEQPAccChgDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadEQPAccChgDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadEQPAccChgDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadEQPAccChgDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadEQPAccChgBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadEQPAccChgBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadEQPAccChgBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddEQPAccChgBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddEQPAccChgBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddEQPAccChgBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditEQPAccChgBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditEQPAccChgBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditEQPAccChgBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelEQPAccChgBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelEQPAccChgBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelEQPAccChgBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadEQPAccChgElement">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadEQPAccChgElementResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadEQPAccChgElementResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddEQPAccChg">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddEQPAccChgResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddEQPAccChgResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAccessoryBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAccessoryBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddAccessoryBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditAccessoryBasis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditAccessoryBasisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditAccessoryBasisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAccessoryState">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAccessoryStateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddAccessoryStateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditAccessoryState">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditAccessoryStateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditAccessoryStateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelAccessoryState">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelAccessoryStateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelAccessoryStateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadAccessoryMaintain">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadAccessoryMaintainResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadAccessoryMaintainResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAccessoryMaintain">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAccessoryMaintainResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddAccessoryMaintainResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditAccessoryMaintain">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditAccessoryMaintainResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditAccessoryMaintainResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelAccessoryMaintain">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelAccessoryMaintainResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelAccessoryMaintainResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveAccessoryMaintain">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveAccessoryMaintainResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApproveAccessoryMaintainResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CopyAccessoryMaintain">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CopyAccessoryMaintainResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CopyAccessoryMaintainResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadEquipmentMaintain">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadEquipmentMaintainResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadEquipmentMaintainResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EQPEquipmentMaintain">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EQPEquipmentMaintainResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EQPEquipmentMaintainResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadPRDAccessory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadPRDAccessoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadPRDAccessoryResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PRDAccessoryData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PRDAccessoryDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PRDAccessoryDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelPRDAccessory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelPRDAccessoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelPRDAccessoryResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSmtMoLabelInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSmtMoLabelInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSmtMoLabelInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductLabelInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductLabelInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductLabelInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetConnectionStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetConnectionStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetConnectionStatusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChkEQPMaintain">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChkEQPMaintainResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChkEQPMaintainResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadEQPCarrierBasis_Delta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadEQPCarrierBasis_DeltaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadEQPCarrierBasis_DeltaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddEQPCarrierBasis_Delta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddEQPCarrierBasis_DeltaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddEQPCarrierBasis_DeltaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditEQPCarrierBasis_Delta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditEQPCarrierBasis_DeltaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditEQPCarrierBasis_DeltaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelEQPCarrierBasis_Delta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelEQPCarrierBasis_DeltaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelEQPCarrierBasis_DeltaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadEQPCarrierState_Delta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadEQPCarrierState_DeltaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadEQPCarrierState_DeltaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadEQPCarrierStateDetail_Delta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadEQPCarrierStateDetail_DeltaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadEQPCarrierStateDetail_DeltaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExeAccessoryMaintainCheck">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExeAccessoryMaintainCheckResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExeAccessoryMaintainCheckResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAccessory_Tension">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAccessory_TensionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddAccessory_TensionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CleanAccessory_Stocker_Delta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CleanAccessory_Stocker_DeltaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CleanAccessory_Stocker_DeltaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryEQPSQLData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryEQPSQLDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryEQPSQLDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EQPExecuteSQL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EQPExecuteSQLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EQPExecuteSQLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddEQPAccChgTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:AddEQPAccChgType" />
+  </wsdl:message>
+  <wsdl:message name="AddEQPAccChgTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:AddEQPAccChgTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditEQPAccChgTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:EditEQPAccChgType" />
+  </wsdl:message>
+  <wsdl:message name="EditEQPAccChgTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:EditEQPAccChgTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelEQPAccChgTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:DelEQPAccChgType" />
+  </wsdl:message>
+  <wsdl:message name="DelEQPAccChgTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:DelEQPAccChgTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadEQPAccChgTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadEQPAccChgType" />
+  </wsdl:message>
+  <wsdl:message name="LoadEQPAccChgTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadEQPAccChgTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="CopyEQPAccChgTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:CopyEQPAccChgType" />
+  </wsdl:message>
+  <wsdl:message name="CopyEQPAccChgTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:CopyEQPAccChgTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddEQPAccChgDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:AddEQPAccChgDetail" />
+  </wsdl:message>
+  <wsdl:message name="AddEQPAccChgDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:AddEQPAccChgDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadEQPAccChgDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadEQPAccChgDetail" />
+  </wsdl:message>
+  <wsdl:message name="LoadEQPAccChgDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadEQPAccChgDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadEQPAccChgBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadEQPAccChgBasis" />
+  </wsdl:message>
+  <wsdl:message name="LoadEQPAccChgBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadEQPAccChgBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddEQPAccChgBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:AddEQPAccChgBasis" />
+  </wsdl:message>
+  <wsdl:message name="AddEQPAccChgBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:AddEQPAccChgBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditEQPAccChgBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:EditEQPAccChgBasis" />
+  </wsdl:message>
+  <wsdl:message name="EditEQPAccChgBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:EditEQPAccChgBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelEQPAccChgBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:DelEQPAccChgBasis" />
+  </wsdl:message>
+  <wsdl:message name="DelEQPAccChgBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:DelEQPAccChgBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadEQPAccChgElementSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadEQPAccChgElement" />
+  </wsdl:message>
+  <wsdl:message name="LoadEQPAccChgElementSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadEQPAccChgElementResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddEQPAccChgSoapIn">
+    <wsdl:part name="parameters" element="tns:AddEQPAccChg" />
+  </wsdl:message>
+  <wsdl:message name="AddEQPAccChgSoapOut">
+    <wsdl:part name="parameters" element="tns:AddEQPAccChgResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddAccessoryBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:AddAccessoryBasis" />
+  </wsdl:message>
+  <wsdl:message name="AddAccessoryBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:AddAccessoryBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditAccessoryBasisSoapIn">
+    <wsdl:part name="parameters" element="tns:EditAccessoryBasis" />
+  </wsdl:message>
+  <wsdl:message name="EditAccessoryBasisSoapOut">
+    <wsdl:part name="parameters" element="tns:EditAccessoryBasisResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddAccessoryStateSoapIn">
+    <wsdl:part name="parameters" element="tns:AddAccessoryState" />
+  </wsdl:message>
+  <wsdl:message name="AddAccessoryStateSoapOut">
+    <wsdl:part name="parameters" element="tns:AddAccessoryStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditAccessoryStateSoapIn">
+    <wsdl:part name="parameters" element="tns:EditAccessoryState" />
+  </wsdl:message>
+  <wsdl:message name="EditAccessoryStateSoapOut">
+    <wsdl:part name="parameters" element="tns:EditAccessoryStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelAccessoryStateSoapIn">
+    <wsdl:part name="parameters" element="tns:DelAccessoryState" />
+  </wsdl:message>
+  <wsdl:message name="DelAccessoryStateSoapOut">
+    <wsdl:part name="parameters" element="tns:DelAccessoryStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadAccessoryMaintainSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadAccessoryMaintain" />
+  </wsdl:message>
+  <wsdl:message name="LoadAccessoryMaintainSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadAccessoryMaintainResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddAccessoryMaintainSoapIn">
+    <wsdl:part name="parameters" element="tns:AddAccessoryMaintain" />
+  </wsdl:message>
+  <wsdl:message name="AddAccessoryMaintainSoapOut">
+    <wsdl:part name="parameters" element="tns:AddAccessoryMaintainResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditAccessoryMaintainSoapIn">
+    <wsdl:part name="parameters" element="tns:EditAccessoryMaintain" />
+  </wsdl:message>
+  <wsdl:message name="EditAccessoryMaintainSoapOut">
+    <wsdl:part name="parameters" element="tns:EditAccessoryMaintainResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelAccessoryMaintainSoapIn">
+    <wsdl:part name="parameters" element="tns:DelAccessoryMaintain" />
+  </wsdl:message>
+  <wsdl:message name="DelAccessoryMaintainSoapOut">
+    <wsdl:part name="parameters" element="tns:DelAccessoryMaintainResponse" />
+  </wsdl:message>
+  <wsdl:message name="ApproveAccessoryMaintainSoapIn">
+    <wsdl:part name="parameters" element="tns:ApproveAccessoryMaintain" />
+  </wsdl:message>
+  <wsdl:message name="ApproveAccessoryMaintainSoapOut">
+    <wsdl:part name="parameters" element="tns:ApproveAccessoryMaintainResponse" />
+  </wsdl:message>
+  <wsdl:message name="CopyAccessoryMaintainSoapIn">
+    <wsdl:part name="parameters" element="tns:CopyAccessoryMaintain" />
+  </wsdl:message>
+  <wsdl:message name="CopyAccessoryMaintainSoapOut">
+    <wsdl:part name="parameters" element="tns:CopyAccessoryMaintainResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadEquipmentMaintainSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadEquipmentMaintain" />
+  </wsdl:message>
+  <wsdl:message name="LoadEquipmentMaintainSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadEquipmentMaintainResponse" />
+  </wsdl:message>
+  <wsdl:message name="EQPEquipmentMaintainSoapIn">
+    <wsdl:part name="parameters" element="tns:EQPEquipmentMaintain" />
+  </wsdl:message>
+  <wsdl:message name="EQPEquipmentMaintainSoapOut">
+    <wsdl:part name="parameters" element="tns:EQPEquipmentMaintainResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadPRDAccessorySoapIn">
+    <wsdl:part name="parameters" element="tns:LoadPRDAccessory" />
+  </wsdl:message>
+  <wsdl:message name="LoadPRDAccessorySoapOut">
+    <wsdl:part name="parameters" element="tns:LoadPRDAccessoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="PRDAccessoryDataSoapIn">
+    <wsdl:part name="parameters" element="tns:PRDAccessoryData" />
+  </wsdl:message>
+  <wsdl:message name="PRDAccessoryDataSoapOut">
+    <wsdl:part name="parameters" element="tns:PRDAccessoryDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelPRDAccessorySoapIn">
+    <wsdl:part name="parameters" element="tns:DelPRDAccessory" />
+  </wsdl:message>
+  <wsdl:message name="DelPRDAccessorySoapOut">
+    <wsdl:part name="parameters" element="tns:DelPRDAccessoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSmtMoLabelInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSmtMoLabelInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetSmtMoLabelInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSmtMoLabelInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductLabelInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProductLabelInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetProductLabelInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductLabelInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetConnectionStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetConnectionStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetConnectionStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetConnectionStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChkEQPMaintainSoapIn">
+    <wsdl:part name="parameters" element="tns:ChkEQPMaintain" />
+  </wsdl:message>
+  <wsdl:message name="ChkEQPMaintainSoapOut">
+    <wsdl:part name="parameters" element="tns:ChkEQPMaintainResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadEQPCarrierBasis_DeltaSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadEQPCarrierBasis_Delta" />
+  </wsdl:message>
+  <wsdl:message name="LoadEQPCarrierBasis_DeltaSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadEQPCarrierBasis_DeltaResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddEQPCarrierBasis_DeltaSoapIn">
+    <wsdl:part name="parameters" element="tns:AddEQPCarrierBasis_Delta" />
+  </wsdl:message>
+  <wsdl:message name="AddEQPCarrierBasis_DeltaSoapOut">
+    <wsdl:part name="parameters" element="tns:AddEQPCarrierBasis_DeltaResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditEQPCarrierBasis_DeltaSoapIn">
+    <wsdl:part name="parameters" element="tns:EditEQPCarrierBasis_Delta" />
+  </wsdl:message>
+  <wsdl:message name="EditEQPCarrierBasis_DeltaSoapOut">
+    <wsdl:part name="parameters" element="tns:EditEQPCarrierBasis_DeltaResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelEQPCarrierBasis_DeltaSoapIn">
+    <wsdl:part name="parameters" element="tns:DelEQPCarrierBasis_Delta" />
+  </wsdl:message>
+  <wsdl:message name="DelEQPCarrierBasis_DeltaSoapOut">
+    <wsdl:part name="parameters" element="tns:DelEQPCarrierBasis_DeltaResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadEQPCarrierState_DeltaSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadEQPCarrierState_Delta" />
+  </wsdl:message>
+  <wsdl:message name="LoadEQPCarrierState_DeltaSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadEQPCarrierState_DeltaResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadEQPCarrierStateDetail_DeltaSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadEQPCarrierStateDetail_Delta" />
+  </wsdl:message>
+  <wsdl:message name="LoadEQPCarrierStateDetail_DeltaSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadEQPCarrierStateDetail_DeltaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExeAccessoryMaintainCheckSoapIn">
+    <wsdl:part name="parameters" element="tns:ExeAccessoryMaintainCheck" />
+  </wsdl:message>
+  <wsdl:message name="ExeAccessoryMaintainCheckSoapOut">
+    <wsdl:part name="parameters" element="tns:ExeAccessoryMaintainCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddAccessory_TensionSoapIn">
+    <wsdl:part name="parameters" element="tns:AddAccessory_Tension" />
+  </wsdl:message>
+  <wsdl:message name="AddAccessory_TensionSoapOut">
+    <wsdl:part name="parameters" element="tns:AddAccessory_TensionResponse" />
+  </wsdl:message>
+  <wsdl:message name="CleanAccessory_Stocker_DeltaSoapIn">
+    <wsdl:part name="parameters" element="tns:CleanAccessory_Stocker_Delta" />
+  </wsdl:message>
+  <wsdl:message name="CleanAccessory_Stocker_DeltaSoapOut">
+    <wsdl:part name="parameters" element="tns:CleanAccessory_Stocker_DeltaResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryEQPSQLDataSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryEQPSQLData" />
+  </wsdl:message>
+  <wsdl:message name="QueryEQPSQLDataSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryEQPSQLDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="EQPExecuteSQLSoapIn">
+    <wsdl:part name="parameters" element="tns:EQPExecuteSQL" />
+  </wsdl:message>
+  <wsdl:message name="EQPExecuteSQLSoapOut">
+    <wsdl:part name="parameters" element="tns:EQPExecuteSQLResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsEQPSoap">
+    <wsdl:operation name="AddEQPAccChgType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">AddEQPAccChgType</wsdl:documentation>
+      <wsdl:input message="tns:AddEQPAccChgTypeSoapIn" />
+      <wsdl:output message="tns:AddEQPAccChgTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditEQPAccChgType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit EQPAccChgType</wsdl:documentation>
+      <wsdl:input message="tns:EditEQPAccChgTypeSoapIn" />
+      <wsdl:output message="tns:EditEQPAccChgTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelEQPAccChgType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete EQPAccChgType</wsdl:documentation>
+      <wsdl:input message="tns:DelEQPAccChgTypeSoapIn" />
+      <wsdl:output message="tns:DelEQPAccChgTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPAccChgType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load EQPAccChgType</wsdl:documentation>
+      <wsdl:input message="tns:LoadEQPAccChgTypeSoapIn" />
+      <wsdl:output message="tns:LoadEQPAccChgTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CopyEQPAccChgType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">CopyEQPAccChgType</wsdl:documentation>
+      <wsdl:input message="tns:CopyEQPAccChgTypeSoapIn" />
+      <wsdl:output message="tns:CopyEQPAccChgTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddEQPAccChgDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">AddEQPAccChgDetail</wsdl:documentation>
+      <wsdl:input message="tns:AddEQPAccChgDetailSoapIn" />
+      <wsdl:output message="tns:AddEQPAccChgDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPAccChgDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load EQPAccChgDetail</wsdl:documentation>
+      <wsdl:input message="tns:LoadEQPAccChgDetailSoapIn" />
+      <wsdl:output message="tns:LoadEQPAccChgDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPAccChgBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Load QC AccChgBasis</wsdl:documentation>
+      <wsdl:input message="tns:LoadEQPAccChgBasisSoapIn" />
+      <wsdl:output message="tns:LoadEQPAccChgBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddEQPAccChgBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add QC AccChgBasis And Relation Data With DataTable</wsdl:documentation>
+      <wsdl:input message="tns:AddEQPAccChgBasisSoapIn" />
+      <wsdl:output message="tns:AddEQPAccChgBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditEQPAccChgBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified EQPAccChgBasis Data by AccChgCode</wsdl:documentation>
+      <wsdl:input message="tns:EditEQPAccChgBasisSoapIn" />
+      <wsdl:output message="tns:EditEQPAccChgBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelEQPAccChgBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete EQPAccChgCode By Specified AccChgCode</wsdl:documentation>
+      <wsdl:input message="tns:DelEQPAccChgBasisSoapIn" />
+      <wsdl:output message="tns:DelEQPAccChgBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPAccChgElement">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Load QC AccChgElement</wsdl:documentation>
+      <wsdl:input message="tns:LoadEQPAccChgElementSoapIn" />
+      <wsdl:output message="tns:LoadEQPAccChgElementSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddEQPAccChg">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add AccChg</wsdl:documentation>
+      <wsdl:input message="tns:AddEQPAccChgSoapIn" />
+      <wsdl:output message="tns:AddEQPAccChgSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAccessoryBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Accessory Basis</wsdl:documentation>
+      <wsdl:input message="tns:AddAccessoryBasisSoapIn" />
+      <wsdl:output message="tns:AddAccessoryBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditAccessoryBasis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified Accessory Basis Data</wsdl:documentation>
+      <wsdl:input message="tns:EditAccessoryBasisSoapIn" />
+      <wsdl:output message="tns:EditAccessoryBasisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAccessoryState">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Accessory State</wsdl:documentation>
+      <wsdl:input message="tns:AddAccessoryStateSoapIn" />
+      <wsdl:output message="tns:AddAccessoryStateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditAccessoryState">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Accessory State</wsdl:documentation>
+      <wsdl:input message="tns:EditAccessoryStateSoapIn" />
+      <wsdl:output message="tns:EditAccessoryStateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelAccessoryState">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete Accessory State By Specified AccessoryNo</wsdl:documentation>
+      <wsdl:input message="tns:DelAccessoryStateSoapIn" />
+      <wsdl:output message="tns:DelAccessoryStateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadAccessoryMaintain">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Accessory Maintain Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadAccessoryMaintainSoapIn" />
+      <wsdl:output message="tns:LoadAccessoryMaintainSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAccessoryMaintain">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Accessory Maintain</wsdl:documentation>
+      <wsdl:input message="tns:AddAccessoryMaintainSoapIn" />
+      <wsdl:output message="tns:AddAccessoryMaintainSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditAccessoryMaintain">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Accessory Maintain</wsdl:documentation>
+      <wsdl:input message="tns:EditAccessoryMaintainSoapIn" />
+      <wsdl:output message="tns:EditAccessoryMaintainSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelAccessoryMaintain">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Del Accessory Maintain</wsdl:documentation>
+      <wsdl:input message="tns:DelAccessoryMaintainSoapIn" />
+      <wsdl:output message="tns:DelAccessoryMaintainSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveAccessoryMaintain">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Approve Specified Equipment Basis Data by EquipmentNo</wsdl:documentation>
+      <wsdl:input message="tns:ApproveAccessoryMaintainSoapIn" />
+      <wsdl:output message="tns:ApproveAccessoryMaintainSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CopyAccessoryMaintain">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Copy Accessory Maintain</wsdl:documentation>
+      <wsdl:input message="tns:CopyAccessoryMaintainSoapIn" />
+      <wsdl:output message="tns:CopyAccessoryMaintainSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadEquipmentMaintain">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load Equipment Maintain Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadEquipmentMaintainSoapIn" />
+      <wsdl:output message="tns:LoadEquipmentMaintainSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EQPEquipmentMaintain">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">EQP Equipment Maintain</wsdl:documentation>
+      <wsdl:input message="tns:EQPEquipmentMaintainSoapIn" />
+      <wsdl:output message="tns:EQPEquipmentMaintainSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadPRDAccessory">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load PRDAccessory Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadPRDAccessorySoapIn" />
+      <wsdl:output message="tns:LoadPRDAccessorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PRDAccessoryData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">PRD Accessory Data</wsdl:documentation>
+      <wsdl:input message="tns:PRDAccessoryDataSoapIn" />
+      <wsdl:output message="tns:PRDAccessoryDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelPRDAccessory">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Del PRDAccessory</wsdl:documentation>
+      <wsdl:input message="tns:DelPRDAccessorySoapIn" />
+      <wsdl:output message="tns:DelPRDAccessorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSmtMoLabelInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get label information by MONo.</wsdl:documentation>
+      <wsdl:input message="tns:GetSmtMoLabelInfoSoapIn" />
+      <wsdl:output message="tns:GetSmtMoLabelInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductLabelInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get PCSRate by ProductNo.</wsdl:documentation>
+      <wsdl:input message="tns:GetProductLabelInfoSoapIn" />
+      <wsdl:output message="tns:GetProductLabelInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConnectionStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get connection status of MES database.</wsdl:documentation>
+      <wsdl:input message="tns:GetConnectionStatusSoapIn" />
+      <wsdl:output message="tns:GetConnectionStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChkEQPMaintain">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Check Equipment Maintain</wsdl:documentation>
+      <wsdl:input message="tns:ChkEQPMaintainSoapIn" />
+      <wsdl:output message="tns:ChkEQPMaintainSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPCarrierBasis_Delta">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load EQP Carrier Basis</wsdl:documentation>
+      <wsdl:input message="tns:LoadEQPCarrierBasis_DeltaSoapIn" />
+      <wsdl:output message="tns:LoadEQPCarrierBasis_DeltaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddEQPCarrierBasis_Delta">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add EQP Carrier Basis</wsdl:documentation>
+      <wsdl:input message="tns:AddEQPCarrierBasis_DeltaSoapIn" />
+      <wsdl:output message="tns:AddEQPCarrierBasis_DeltaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditEQPCarrierBasis_Delta">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Edit Specified EQPCarrierBasis_Delta Data by CarrierNo</wsdl:documentation>
+      <wsdl:input message="tns:EditEQPCarrierBasis_DeltaSoapIn" />
+      <wsdl:output message="tns:EditEQPCarrierBasis_DeltaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelEQPCarrierBasis_Delta">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete EQPCarrierBasis_Delta By Specified CarrierNo</wsdl:documentation>
+      <wsdl:input message="tns:DelEQPCarrierBasis_DeltaSoapIn" />
+      <wsdl:output message="tns:DelEQPCarrierBasis_DeltaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPCarrierState_Delta">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load EQP Carrier State Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadEQPCarrierState_DeltaSoapIn" />
+      <wsdl:output message="tns:LoadEQPCarrierState_DeltaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPCarrierStateDetail_Delta">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load EQP Carrier State Detail Data</wsdl:documentation>
+      <wsdl:input message="tns:LoadEQPCarrierStateDetail_DeltaSoapIn" />
+      <wsdl:output message="tns:LoadEQPCarrierStateDetail_DeltaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExeAccessoryMaintainCheck">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Execute Accessory Maintain Check</wsdl:documentation>
+      <wsdl:input message="tns:ExeAccessoryMaintainCheckSoapIn" />
+      <wsdl:output message="tns:ExeAccessoryMaintainCheckSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAccessory_Tension">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add Accessory_Tension</wsdl:documentation>
+      <wsdl:input message="tns:AddAccessory_TensionSoapIn" />
+      <wsdl:output message="tns:AddAccessory_TensionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CleanAccessory_Stocker_Delta">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Clean Accessory Stocker</wsdl:documentation>
+      <wsdl:input message="tns:CleanAccessory_Stocker_DeltaSoapIn" />
+      <wsdl:output message="tns:CleanAccessory_Stocker_DeltaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryEQPSQLData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load EQP Data</wsdl:documentation>
+      <wsdl:input message="tns:QueryEQPSQLDataSoapIn" />
+      <wsdl:output message="tns:QueryEQPSQLDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EQPExecuteSQL">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Load EQP Data</wsdl:documentation>
+      <wsdl:input message="tns:EQPExecuteSQLSoapIn" />
+      <wsdl:output message="tns:EQPExecuteSQLSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsEQPSoap" type="tns:wsEQPSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddEQPAccChgType">
+      <soap:operation soapAction="http://tempuri.org/AddEQPAccChgType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditEQPAccChgType">
+      <soap:operation soapAction="http://tempuri.org/EditEQPAccChgType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelEQPAccChgType">
+      <soap:operation soapAction="http://tempuri.org/DelEQPAccChgType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPAccChgType">
+      <soap:operation soapAction="http://tempuri.org/LoadEQPAccChgType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CopyEQPAccChgType">
+      <soap:operation soapAction="http://tempuri.org/CopyEQPAccChgType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddEQPAccChgDetail">
+      <soap:operation soapAction="http://tempuri.org/AddEQPAccChgDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPAccChgDetail">
+      <soap:operation soapAction="http://tempuri.org/LoadEQPAccChgDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPAccChgBasis">
+      <soap:operation soapAction="http://tempuri.org/LoadEQPAccChgBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddEQPAccChgBasis">
+      <soap:operation soapAction="http://tempuri.org/AddEQPAccChgBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditEQPAccChgBasis">
+      <soap:operation soapAction="http://tempuri.org/EditEQPAccChgBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelEQPAccChgBasis">
+      <soap:operation soapAction="http://tempuri.org/DelEQPAccChgBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPAccChgElement">
+      <soap:operation soapAction="http://tempuri.org/LoadEQPAccChgElement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddEQPAccChg">
+      <soap:operation soapAction="http://tempuri.org/AddEQPAccChg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAccessoryBasis">
+      <soap:operation soapAction="http://tempuri.org/AddAccessoryBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditAccessoryBasis">
+      <soap:operation soapAction="http://tempuri.org/EditAccessoryBasis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAccessoryState">
+      <soap:operation soapAction="http://tempuri.org/AddAccessoryState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditAccessoryState">
+      <soap:operation soapAction="http://tempuri.org/EditAccessoryState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelAccessoryState">
+      <soap:operation soapAction="http://tempuri.org/DelAccessoryState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadAccessoryMaintain">
+      <soap:operation soapAction="http://tempuri.org/LoadAccessoryMaintain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAccessoryMaintain">
+      <soap:operation soapAction="http://tempuri.org/AddAccessoryMaintain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditAccessoryMaintain">
+      <soap:operation soapAction="http://tempuri.org/EditAccessoryMaintain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelAccessoryMaintain">
+      <soap:operation soapAction="http://tempuri.org/DelAccessoryMaintain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveAccessoryMaintain">
+      <soap:operation soapAction="http://tempuri.org/ApproveAccessoryMaintain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CopyAccessoryMaintain">
+      <soap:operation soapAction="http://tempuri.org/CopyAccessoryMaintain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadEquipmentMaintain">
+      <soap:operation soapAction="http://tempuri.org/LoadEquipmentMaintain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EQPEquipmentMaintain">
+      <soap:operation soapAction="http://tempuri.org/EQPEquipmentMaintain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadPRDAccessory">
+      <soap:operation soapAction="http://tempuri.org/LoadPRDAccessory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PRDAccessoryData">
+      <soap:operation soapAction="http://tempuri.org/PRDAccessoryData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelPRDAccessory">
+      <soap:operation soapAction="http://tempuri.org/DelPRDAccessory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSmtMoLabelInfo">
+      <soap:operation soapAction="http://tempuri.org/GetSmtMoLabelInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductLabelInfo">
+      <soap:operation soapAction="http://tempuri.org/GetProductLabelInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConnectionStatus">
+      <soap:operation soapAction="http://tempuri.org/GetConnectionStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkEQPMaintain">
+      <soap:operation soapAction="http://tempuri.org/ChkEQPMaintain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPCarrierBasis_Delta">
+      <soap:operation soapAction="http://tempuri.org/LoadEQPCarrierBasis_Delta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddEQPCarrierBasis_Delta">
+      <soap:operation soapAction="http://tempuri.org/AddEQPCarrierBasis_Delta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditEQPCarrierBasis_Delta">
+      <soap:operation soapAction="http://tempuri.org/EditEQPCarrierBasis_Delta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelEQPCarrierBasis_Delta">
+      <soap:operation soapAction="http://tempuri.org/DelEQPCarrierBasis_Delta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPCarrierState_Delta">
+      <soap:operation soapAction="http://tempuri.org/LoadEQPCarrierState_Delta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPCarrierStateDetail_Delta">
+      <soap:operation soapAction="http://tempuri.org/LoadEQPCarrierStateDetail_Delta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExeAccessoryMaintainCheck">
+      <soap:operation soapAction="http://tempuri.org/ExeAccessoryMaintainCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAccessory_Tension">
+      <soap:operation soapAction="http://tempuri.org/AddAccessory_Tension" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CleanAccessory_Stocker_Delta">
+      <soap:operation soapAction="http://tempuri.org/CleanAccessory_Stocker_Delta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryEQPSQLData">
+      <soap:operation soapAction="http://tempuri.org/QueryEQPSQLData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EQPExecuteSQL">
+      <soap:operation soapAction="http://tempuri.org/EQPExecuteSQL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsEQPSoap12" type="tns:wsEQPSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddEQPAccChgType">
+      <soap12:operation soapAction="http://tempuri.org/AddEQPAccChgType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditEQPAccChgType">
+      <soap12:operation soapAction="http://tempuri.org/EditEQPAccChgType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelEQPAccChgType">
+      <soap12:operation soapAction="http://tempuri.org/DelEQPAccChgType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPAccChgType">
+      <soap12:operation soapAction="http://tempuri.org/LoadEQPAccChgType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CopyEQPAccChgType">
+      <soap12:operation soapAction="http://tempuri.org/CopyEQPAccChgType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddEQPAccChgDetail">
+      <soap12:operation soapAction="http://tempuri.org/AddEQPAccChgDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPAccChgDetail">
+      <soap12:operation soapAction="http://tempuri.org/LoadEQPAccChgDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPAccChgBasis">
+      <soap12:operation soapAction="http://tempuri.org/LoadEQPAccChgBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddEQPAccChgBasis">
+      <soap12:operation soapAction="http://tempuri.org/AddEQPAccChgBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditEQPAccChgBasis">
+      <soap12:operation soapAction="http://tempuri.org/EditEQPAccChgBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelEQPAccChgBasis">
+      <soap12:operation soapAction="http://tempuri.org/DelEQPAccChgBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPAccChgElement">
+      <soap12:operation soapAction="http://tempuri.org/LoadEQPAccChgElement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddEQPAccChg">
+      <soap12:operation soapAction="http://tempuri.org/AddEQPAccChg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAccessoryBasis">
+      <soap12:operation soapAction="http://tempuri.org/AddAccessoryBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditAccessoryBasis">
+      <soap12:operation soapAction="http://tempuri.org/EditAccessoryBasis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAccessoryState">
+      <soap12:operation soapAction="http://tempuri.org/AddAccessoryState" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditAccessoryState">
+      <soap12:operation soapAction="http://tempuri.org/EditAccessoryState" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelAccessoryState">
+      <soap12:operation soapAction="http://tempuri.org/DelAccessoryState" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadAccessoryMaintain">
+      <soap12:operation soapAction="http://tempuri.org/LoadAccessoryMaintain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAccessoryMaintain">
+      <soap12:operation soapAction="http://tempuri.org/AddAccessoryMaintain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditAccessoryMaintain">
+      <soap12:operation soapAction="http://tempuri.org/EditAccessoryMaintain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelAccessoryMaintain">
+      <soap12:operation soapAction="http://tempuri.org/DelAccessoryMaintain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveAccessoryMaintain">
+      <soap12:operation soapAction="http://tempuri.org/ApproveAccessoryMaintain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CopyAccessoryMaintain">
+      <soap12:operation soapAction="http://tempuri.org/CopyAccessoryMaintain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadEquipmentMaintain">
+      <soap12:operation soapAction="http://tempuri.org/LoadEquipmentMaintain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EQPEquipmentMaintain">
+      <soap12:operation soapAction="http://tempuri.org/EQPEquipmentMaintain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadPRDAccessory">
+      <soap12:operation soapAction="http://tempuri.org/LoadPRDAccessory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PRDAccessoryData">
+      <soap12:operation soapAction="http://tempuri.org/PRDAccessoryData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelPRDAccessory">
+      <soap12:operation soapAction="http://tempuri.org/DelPRDAccessory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSmtMoLabelInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetSmtMoLabelInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductLabelInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetProductLabelInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConnectionStatus">
+      <soap12:operation soapAction="http://tempuri.org/GetConnectionStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkEQPMaintain">
+      <soap12:operation soapAction="http://tempuri.org/ChkEQPMaintain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPCarrierBasis_Delta">
+      <soap12:operation soapAction="http://tempuri.org/LoadEQPCarrierBasis_Delta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddEQPCarrierBasis_Delta">
+      <soap12:operation soapAction="http://tempuri.org/AddEQPCarrierBasis_Delta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditEQPCarrierBasis_Delta">
+      <soap12:operation soapAction="http://tempuri.org/EditEQPCarrierBasis_Delta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelEQPCarrierBasis_Delta">
+      <soap12:operation soapAction="http://tempuri.org/DelEQPCarrierBasis_Delta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPCarrierState_Delta">
+      <soap12:operation soapAction="http://tempuri.org/LoadEQPCarrierState_Delta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadEQPCarrierStateDetail_Delta">
+      <soap12:operation soapAction="http://tempuri.org/LoadEQPCarrierStateDetail_Delta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExeAccessoryMaintainCheck">
+      <soap12:operation soapAction="http://tempuri.org/ExeAccessoryMaintainCheck" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAccessory_Tension">
+      <soap12:operation soapAction="http://tempuri.org/AddAccessory_Tension" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CleanAccessory_Stocker_Delta">
+      <soap12:operation soapAction="http://tempuri.org/CleanAccessory_Stocker_Delta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryEQPSQLData">
+      <soap12:operation soapAction="http://tempuri.org/QueryEQPSQLData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EQPExecuteSQL">
+      <soap12:operation soapAction="http://tempuri.org/EQPExecuteSQL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsEQP">
+    <wsdl:port name="wsEQPSoap" binding="tns:wsEQPSoap">
+      <soap:address location="http://localhost/MESws2005_Delta_CUS/wsEQP/wsEQP.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsEQPSoap12" binding="tns:wsEQPSoap12">
+      <soap12:address location="http://localhost/MESws2005_Delta_CUS/wsEQP/wsEQP.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

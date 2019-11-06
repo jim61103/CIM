@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<log4net>
+  <appender name="A1" type="log4net.Appender.ConsoleAppender">
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date %-5level %logger - %message%newline" />
+    </layout>
+  </appender>
+  <appender name="A2" type="log4net.Appender.RollingFileAppender">
+    <file value="Log/log@"/>
+    <staticLogFileName value="false"/>
+    <appendToFile value="true"/>
+    <rollingStyle value="Date"/>
+    <datePattern value="yyyy-MM-dd.lo\g"/>
+    <encoding value="UTF-8"/>
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date %level %message%newline"/>
+    </layout>
+  </appender>
+  <appender name="A3" type="log4net.Appender.RollingFileAppender">
+    <file value="Log/logError@"/>
+    <staticLogFileName value="false"/>
+    <appendToFile value="true"/>
+    <rollingStyle value="Date"/>
+    <datePattern value="yyyy-MM-dd.lo\g"/>
+    <encoding value="UTF-8"/>
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date %-5level %logger - %message%newline"/>
+    </layout>
+    <filter type="log4net.Filter.LevelRangeFilter">
+      <param name="LevelMin" value="ERROR" />
+      <param name="LevelMax" value="ERROR" />
+    </filter>
+  </appender>
+
+  <root>
+    <level value="ALL"/>
+    <appender-ref ref="A2"/>
+    <appender-ref ref="A1"/>
+    <appender-ref ref="A3"/>
+  </root>
+</log4net>
