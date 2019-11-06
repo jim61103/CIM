@@ -20,7 +20,7 @@ namespace CIM
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            //test
+            
             try
             {
                 if (ckbEQPCheck1.Checked == true && ckbEQPCheck2.Checked == true && ckbEQPCheck3.Checked == true && ckbEQPCheck4.Checked == true)
